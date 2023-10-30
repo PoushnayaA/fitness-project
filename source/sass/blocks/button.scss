@@ -12,3 +12,10 @@
   color: $color-default-white;
   text-transform: uppercase;
 }
+
+@media (max-width: $vp-1365) {
+  .button {
+    width: 185px;
+    padding: 20px;
+  }
+}

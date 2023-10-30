@@ -7,6 +7,27 @@
   line-height: 26px;
 }
 
+@media (max-width: $vp-1365) {
+  .main-nav {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .main-nav {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .main-nav__list {
+    margin: 13px 0;
+    padding: 0;
+  }
+}
+
 .main-nav__item {
   list-style-type: none;
 }
@@ -17,4 +38,18 @@
 
 .main-nav__link {
   color: $color-default-white;
+}
+
+@media (max-width: $vp-1365) {
+  .main-nav__svg {
+    width: 111px;
+    height: 24px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .main-nav__svg {
+    width: 102px;
+    height: 22px;
+  }
 }

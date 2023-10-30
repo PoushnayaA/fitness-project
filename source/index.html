@@ -8,7 +8,7 @@
   <meta name="description" content="Первый проект акселератора для фитнес-центра в Омске">
   <title>Fitness</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/alumni-sans-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -21,7 +21,7 @@
     <div class="main-header__container">
     <nav class="main-header__nav main-nav">
       <a class="main-nav__logo">
-        <img src="./img/logo.svg" width="120" height="26" alt="Логотип SUPERGYM.">
+        <img class="main-nav__svg" src="./img/logo.svg" width="120" height="26" alt="Логотип SUPERGYM.">
       </a>
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -31,7 +31,7 @@
     </nav>
     <section class="main-header__hero hero">
       <h2 class="visually-hidden">Стартовый блок.</h2>
-      <div class="hero__wrapper">
+      <div class="hero__wrapper hero__wrapper--list">
         <ul class="hero__list">
           <li class="hero__item">Тренажёрный зал</li>
           <li class="hero__item">Групповые занятия</li>
@@ -55,6 +55,7 @@
             srcset="./img/hero/hero-image-desktop@2x.jpg 2x" alt="Тренер в футболке на главной странице.">
         </picture>
       </div>
+      <a class="hero__mobile-button button" href="#">Купить абонемент</a>
     </section>
   </div>
   </header>

@@ -5,6 +5,13 @@
   text-align: right;
 }
 
+@media (max-width: $vp-767) {
+  .hero {
+    flex-wrap: wrap;
+  }
+}
+
+
 .hero__wrapper {
   font-size: 14px;
   font-weight: 400;
@@ -14,6 +21,7 @@
 
   &--main-text {
     max-width: 270px;
+    font-weight: 800;
     font-family: $ff-alumni;
     text-transform: uppercase;
     align-self: flex-start;
@@ -25,8 +33,47 @@
   }
 }
 
+@media (max-width: $vp-1365) {
+  .hero__wrapper--main-text {
+    max-width: 185px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .hero__wrapper--main-text {
+    max-width: 162px;
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .hero__wrapper--list {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: $vp-1365) {
+  .hero__wrapper--image {
+    margin-left: 29px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .hero__wrapper--image {
+    display: none;
+  }
+}
+
 .hero__list {
   padding: 0;
+}
+
+@media (max-width: $vp-767) {
+  .hero__list {
+    margin-bottom: 2px;
+    line-height: 20px;
+  }
 }
 
 .hero__item {
@@ -43,6 +90,24 @@
   margin-bottom: 10px;
 }
 
+@media (max-width: $vp-1365) {
+  .hero__text {
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: 31px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .hero__text {
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 35px;
+    margin-bottom: 14px;
+  }
+}
+
+
 .hero__title {
   font-family: $ff-alumni;
   font-size: 92px;
@@ -52,7 +117,41 @@
   margin: 0;
 }
 
+@media (max-width: $vp-1365) {
+  .hero__title {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .hero__title {
+    font-size: 62px;
+    line-height: 70px;
+    letter-spacing: 0.03em;
+  }
+}
+
 .hero__button {
   margin-left: auto;
   margin-top: 50px;
+}
+
+@media (max-width: $vp-767) {
+  .hero__button {
+    display: none;
+  }
+}
+
+.hero__mobile-button {
+  display: none;
+}
+
+@media (max-width: $vp-767) {
+  .hero__mobile-button {
+    display: block;
+    width: 100%;
+    margin-top: 59px;
+  }
 }
