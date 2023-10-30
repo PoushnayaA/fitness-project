@@ -14,15 +14,15 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/visually-hidden";
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/button";
+@import "blocks/main-header";
+@import "blocks/main-nav";
+@import "blocks/hero";
 
 // ---------------------------------
 

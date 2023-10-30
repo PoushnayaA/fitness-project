@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Первый проект акселератора для фитнес-центра в Омске">
-    <title>Fitness</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/alumni-sans-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  </head>
-  <body>
-    <div>test link: <a href="https://github.com/PoushnayaA">click</a></div>
 
-    <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Первый проект акселератора для фитнес-центра в Омске">
+  <title>Fitness</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/alumni-sans-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 class="visually-hidden">Фитнес центр в Омске.</h1>
+  <header class="main-header">
+    <div class="main-header__container">
+    <nav class="main-header__nav main-nav">
+      <a class="main-nav__logo">
+        <img src="./img/logo.svg" width="120" height="26" alt="Логотип SUPERGYM.">
+      </a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="tel:+78005555555">8-800-555-55-55</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="main-header__hero hero">
+      <h2 class="visually-hidden">Стартовый блок.</h2>
+      <div class="hero__wrapper">
+        <ul class="hero__list">
+          <li class="hero__item">Тренажёрный зал</li>
+          <li class="hero__item">Групповые занятия</li>
+          <li class="hero__item">Кардио-зона</li>
+        </ul>
+      </div>
+      <div class="hero__wrapper hero__wrapper--main-text">
+        <p class="hero__text">Омск</p>
+        <h3 class="hero__title">Фитнес центр</h3>
+        <a class="hero__button button" href="#">Купить абонемент</a>
+      </div>
+      <div class="hero__wrapper hero__wrapper--image">
+        <picture>
+          <source type="image/webp" media="(max-width: 1365px)" width="324" height="390"
+            srcset="./img/hero/hero-image-tablet@1x.webp 1x, ./img/hero/hero-image-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1366px)" width="500" height="524"
+            srcset="./img/hero/hero-image-desktop@1x.webp 1x, ./img/hero/hero-image-desktop@2x.webp 2x">
+          <source type="image/jpeg" media="(max-width: 1365px)" width="324" height="390"
+            srcset="./img/hero/hero-image-tablet@1x.jpg 1x, ./img/hero/hero-image-tablet@2x.jpg 2x">
+          <img class="hero__image" src="./img/hero/hero-image-desktop@1x.jpg" width="500" height="524"
+            srcset="./img/hero/hero-image-desktop@2x.jpg 2x" alt="Тренер в футболке на главной странице.">
+        </picture>
+      </div>
+    </section>
+  </div>
+  </header>
+
+  <!-- <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script> -->
+</body>
+
 </html>

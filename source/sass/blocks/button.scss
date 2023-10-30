@@ -1,0 +1,14 @@
+.button {
+  display: block;
+  width: 230px;
+  font-family: $ff-roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 25px;
+  border: 2px solid $color-default-white;
+  color: $color-default-white;
+  text-transform: uppercase;
+}

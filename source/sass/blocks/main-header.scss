@@ -1,0 +1,16 @@
+.main-header {
+  width: 100%;
+  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.76%, #73184b 75.5%, #b4022a 100%);
+
+  color: $color-default-white;
+}
+
+.main-header__container {
+  width: 1366px;
+  margin: 0 auto;
+  padding: 4px 103px 120px;
+}
+
+.main-header__hero {
+  margin-top: 4px;
+}
