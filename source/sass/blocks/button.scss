@@ -11,6 +11,19 @@
   border: 2px solid $color-default-white;
   color: $color-default-white;
   text-transform: uppercase;
+
+  &--light {
+    border: 2px solid $color-sapphire;
+    color: $color-sapphire;
+    background-color: $color-default-white;
+  }
+
+  &--main {
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    width: 234px;
+    padding: 27px 25px;
+    border: none;
+  }
 }
 
 @media (max-width: $vp-1365) {
