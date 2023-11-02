@@ -1408,6 +1408,128 @@ button,
     margin: 22px auto 0;
   }
 }
+.games {
+  width: 100%;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+.games__news-container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  width: 1366px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1365px) {
+  .games__news-container {
+    width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .games__news-container {
+    width: 320px;
+  }
+}
+.games__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ED0233;
+  width: 500px;
+  min-height: 500px;
+  padding: 40px;
+}
+
+.games__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.games__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  max-width: 180px;
+  margin-top: 0;
+}
+
+.games__dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.games__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.games__numbers-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.games__numbers-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.games__main-number {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.games__number {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

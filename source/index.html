@@ -94,7 +94,7 @@
                 <source type="image/webp" media="(min-width: 1366px)" width="660" height="401"
                   srcset="./img/about/about-gym-desktop@1x.webp 1x, ./img/about/about-gym-desktop@2x.webp 2x">
                 <source type="image/jpeg" media="(max-width: 767px)" width="320" height="313"
-                  srcset="./img/about/about-gym-mobile@1x.jpg 1x, ../img/about/about-gym-mobile@2x.jpg 2x">
+                  srcset="./img/about/about-gym-mobile@1x.jpg 1x, ./img/about/about-gym-mobile@2x.jpg 2x">
                 <source type="image/jpeg" media="(max-width: 1365px)" width="678" height="345"
                   srcset="./img/about/about-gym-tablet@1x.jpg 1x, ./img/about/about-gym-tablet@2x.jpg 2x">
                 <img src="./img/about/about-gym-desktop@1x.jpg" width="660" height="401"
@@ -176,10 +176,65 @@
         </div>
         <!-- <img class="price__decoration-element" src="img/price/decoration.svg" width="460" height="720"> -->
       </section>
+      <section class="games">
+        <h2 class="visually-hidden">Игры.</h2>
+        <div class="games__news-container">
+          <div class="games__text-wrapper">
+            <div class="games__information">
+              <h3 class="games__title">Super Games</h3>
+              <div class="games__dates">
+                <div class="games__date-wrapper">
+                  <div class="games__text">Дата</div>
+                  <div class="games__numbers-wrapper">
+                    <span class="games__main-number">7</span>
+                    <div class="games__number">
+                      <span>Марта</span>
+                      <span>2019</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="games__date-wrapper">
+                  <div class="games__text">Время</div>
+                  <div class="games__numbers-wrapper">
+                    <span class="games__main-number">12:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="games__description">Ежегодные соревнования по CrossFit</p>
+            <a class="games__button button" href="#">Заполнить анкету</a>
+          </div>
+
+
+          <div class="games__img-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" width="290" height="292"
+                srcset="./img/games/games-pic-mobile@1x.webp 1x, ./img/games/games-pic-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1365px)" width="386" height="324"
+                srcset="./img/games/games-pic-tablet@1x.webp 1x, ./img/games/games-pic-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1366px)" width="660" height="500"
+                srcset="./img/games/games-pic-desktop@1x.webp 1x, ./img/games/games-pic-desktop@2x.webp 2x">
+              <source type="image/jpeg" media="(max-width: 767px)" width="290" height="292"
+                srcset="./img/games/games-pic-mobile@1x.jpg 1x, ./img/games/games-pic-mobilee@2x.jpg 2x">
+              <source type="image/jpeg" media="(max-width: 1365px)" width="386" height="324"
+                srcset="./img/games/games-pic-tablet@1x.jpg 1x, ./img/games/games-pic-tablet@2x.jpg 2x">
+              <img class="games__img" src="./img/games/games-pic-desktop@1x.jpg" width="660" height="500"
+                srcset="./img/games/games-pic-desktop@2x.jpg 2x" alt="Фото тренажерного зала.">
+            </picture>
+          </div>
+
+        </div>
+        <div class="games__jury-container">
+
+        </div>
+      </section>
+
+
     </main>
   </div>
   <!-- <script src="js/vendor.js"></script> -->
-    <script src="js/main.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

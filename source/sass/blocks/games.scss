@@ -1,0 +1,108 @@
+.games {
+  width: 100%;
+  font-family: $ff-roboto;
+}
+
+.games__news-container {
+  margin: 0 auto;
+  display: flex;
+  color: $color-default-white;
+  width: 1366px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: $vp-1365) {
+  .games__news-container {
+    width: 768px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .games__news-container {
+    width: 320px;
+  }
+}
+
+
+// @media (max-width: $vp-1365) {
+//   .games__news-container {
+//     width: 678px;
+//   }
+// }
+
+// @media (max-width: $vp-767) {
+//   .games__news-container {
+//     width: 290px;
+//   }
+// }
+
+.games__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #ED0233;
+  width: 500px;
+  min-height: 500px;
+  padding: 40px;
+}
+
+.games__information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.games__title {
+  font-family: $ff-alumni;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  max-width: 180px;
+  margin-top: 0;
+}
+
+.games__dates {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.games__text {
+
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 20px;
+
+}
+
+.games__numbers-wrapper {
+  display: flex;
+  position: relative;
+  width: fit-content;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 1px;
+    background-color: $color-default-white;
+  }
+}
+
+.games__main-number {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.games__number {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
