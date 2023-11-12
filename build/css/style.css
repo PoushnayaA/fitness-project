@@ -2200,21 +2200,17 @@ button,
 
 @media (max-width: 1365px) {
   .price__pagination-list {
-    gap: 55px;
+    gap: 37px;
     margin-bottom: 44px;
   }
 }
 @media (max-width: 768px) {
   .price__pagination-list {
-    gap: 45px;
+    gap: 29px;
     margin-bottom: 34px;
   }
 }
 .price__pagination-item {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 20px;
   color: rgba(16, 38, 84, 0.5019607843);
   position: relative;
   padding-bottom: 12px;
@@ -2234,31 +2230,36 @@ button,
   background-color: #D10A42;
 }
 
-@media (max-width: 1365px) {
-  .price__pagination-item {
-    font-size: 18px;
-    line-height: 18px;
-    padding-bottom: 15px;
-  }
-}
-@media (max-width: 768px) {
-  .price__pagination-item {
-    font-size: 16px;
-    line-height: 16px;
-    padding-bottom: 18px;
-  }
-}
 .price__pagination-item button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
   background-color: transparent;
   border: none;
   color: inherit;
   cursor: pointer;
 }
 
+@media (max-width: 1365px) {
+  .price__pagination-item button {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .price__pagination-item button {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 18px;
+  }
+}
 .price__cards-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
