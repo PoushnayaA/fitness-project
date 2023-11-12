@@ -134,57 +134,141 @@
           </div>
         </div>
       </section>
+
+
       <section class="price" id="price">
         <h2 class="visually-hidden">Блок с ценами</h2>
-        <div class="price__container">
+        <div class="price__container" data-tabs="parent">
           <h3 class="price__title">Абонементы</h3>
-          <ul class="price__pagination-list">
-            <li class="price__pagination-item price__pagination-item--active"> 1 месяц</li>
-            <li class="price__pagination-item">6 месяцев</li>
-            <li class="price__pagination-item">12 месяцев</li>
+          <ul class="price__pagination-list" data-tabs="controls">
+            <li class="price__pagination-item"><button data-tabs="control">1
+                месяц</button></li>
+            <li class="price__pagination-item"><button data-tabs="control">6 месяцев</button></li>
+            <li class="price__pagination-item"><button data-tabs="control">12 месяцев</button></li>
           </ul>
-          <ul class="price__cards-wrapper">
-            <li class="price__card">
-              <div class="price__card-name">С тренером</div>
-              <p class="price__card-description">12 занятий</p>
-              <div class="price__card-price">
-                5000
-                <span class="price__card-price-decoration">5000</span>
-                <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                  <use href="img/sprite.svg#rouble"></use>
-                </svg>
-              </div>
-              <button class="price__button button button--light">Купить абонемент</button>
-            </li>
-            <li class="price__card price__card--active">
-              <div class="price__card-name">Дневной</div>
-              <p class="price__card-description">с 8:00 до 17:00</p>
-              <div class="price__card-price">
-                1700
-                <span class="price__card-price-decoration">1700</span>
-                <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                  <use href="img/sprite.svg#rouble"></use>
-                </svg>
-              </div>
-              <button class="price__button button button--main">Купить абонемент</button>
-            </li>
-            <li class="price__card">
-              <div class="price__card-name">Полный день</div>
-              <p class="price__card-description">с 8:00 до 22:00</p>
-              <div class="price__card-price">
-                2700
-                <span class="price__card-price-decoration">2700</span>
-                <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                  <use href="img/sprite.svg#rouble"></use>
-                </svg>
-              </div>
-              <button class="price__button button button--light">Купить абонемент</button>
-            </li>
-          </ul>
-          <!-- <img class="price__decoration-element" src="img/price/decoration.svg" width="460" height="720"> -->
+          <div data-tabs="content">
+            <ul class="price__cards-wrapper" data-tabs="element">
+              <li class="price__card">
+                <div class="price__card-name">С тренером</div>
+                <p class="price__card-description">12 занятий</p>
+                <div class="price__card-price">
+                  5000
+                  <span class="price__card-price-decoration">5000</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <button class="price__button button button--light">Купить абонемент</button>
+              </li>
+              <li class="price__card price__card--active">
+                <div class="price__card-name">Дневной</div>
+                <p class="price__card-description">с 8:00 до 17:00</p>
+                <div class="price__card-price">
+                  1700
+                  <span class="price__card-price-decoration">1700</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <button class="price__button button button--main">Купить абонемент</button>
+              </li>
+              <li class="price__card">
+                <div class="price__card-name">Полный день</div>
+                <p class="price__card-description">с 8:00 до 22:00</p>
+                <div class="price__card-price">
+                  2700
+                  <span class="price__card-price-decoration">2700</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <button class="price__button button button--light">Купить абонемент</button>
+              </li>
+            </ul>
+            <ul class="price__cards-wrapper" data-tabs="element">
+              <li class="price__card">
+                <div class="price__card-name">С тренером</div>
+                <p class="price__card-description">12 занятий</p>
+                <div class="price__card-price">
+                  30000
+                  <span class="price__card-price-decoration">30000</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <button class="price__button button button--light">Купить абонемент</button>
+              </li>
+              <li class="price__card price__card--active">
+                <div class="price__card-name">Дневной</div>
+                <p class="price__card-description">с 8:00 до 17:00</p>
+                <div class="price__card-price">
+                  10200
+                  <span class="price__card-price-decoration">10200</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <button class="price__button button button--main">Купить абонемент</button>
+              </li>
+              <li class="price__card">
+                <div class="price__card-name">Полный день</div>
+                <p class="price__card-description">с 8:00 до 22:00</p>
+                <div class="price__card-price">
+                  16200
+                  <span class="price__card-price-decoration">16200</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <button class="price__button button button--light">Купить абонемент</button>
+              </li>
+            </ul>
+            <ul class="price__cards-wrapper" data-tabs="element">
+              <li class="price__card">
+                <div class="price__card-name">С тренером</div>
+                <p class="price__card-description">12 занятий</p>
+                <div class="price__card-price">
+                  60000
+                  <span class="price__card-price-decoration">60000</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <button class="price__button button button--light">Купить абонемент</button>
+              </li>
+              <li class="price__card price__card--active">
+                <div class="price__card-name">Дневной</div>
+                <p class="price__card-description">с 8:00 до 17:00</p>
+                <div class="price__card-price">
+                  20400
+                  <span class="price__card-price-decoration">20400</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <button class="price__button button button--main">Купить абонемент</button>
+              </li>
+              <li class="price__card">
+                <div class="price__card-name">Полный день</div>
+                <p class="price__card-description">с 8:00 до 22:00</p>
+                <div class="price__card-price">
+                  32400
+                  <span class="price__card-price-decoration">32400</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <button class="price__button button button--light">Купить абонемент</button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- <img class="price__decoration-element" src="img/price/decoration.svg" width="460" height="720"> -->
       </section>
+
+
+
+
+
       <section class="games">
         <h2 class="visually-hidden">Игры и жюри.</h2>
         <div class="games__news-container">
@@ -393,61 +477,57 @@
           </div>
         </div>
       </section>
-
-
-
       <section class="features">
-
         <h2 class="features__title">Наши преимущества</h2>
-          <div class="features__wrapper">
-            <ul class="features__list">
-              <li class="features__item">
-                <div class="features__item-title">
-                  <p class="features__item-text">900</p>
-                  <div>кв/м</div>
-                </div>
-                <div class="features__item-text">
-                  <h3>Площадь</h3>
-                  <p>Занимайтесь без очередей<br class="features__br"> и толкучки</p>
-                </div>
-              </li>
-              <li class="features__item">
-                <div class="features__item-title">
-                  <p class="features__item-text">70</p>
-                  <div>машин</div>
-                </div>
-                <div class="features__item-text">
-                  <h3>Собственная парковка</h3>
-                  <p>Вы всегда найдете место для своей машины на нашей парковке</p>
-                </div>
-              </li>
-              <li class="features__item features__item--decorated">
-                <p>100</p>
-                <div>Тренажеров</div>
-                <h3>Современные тренажеры на все&nbsp;группы&nbsp;мышц</h3>
-              </li>
-              <li class="features__item">
-                <div class="features__item-title">
-                  <p class="features__item-text">350</p>
-                  <div>мест</div>
-                </div>
-                <div class="features__item-text">
-                  <h3>Комфорт</h3>
-                  <p>Просторные раздевалки, душевые,&nbsp;фен, Wi-Fi, кулеры</p>
-                </div>
-              </li>
-              <li class="features__item">
-                <div class="features__item-title">
-                  <p class="features__item-text">5+</p>
-                  <div>лет</div>
-                </div>
-                <div class="features__item-text">
-                  <h3>Тренерский опыт</h3>
-                  <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <div class="features__wrapper">
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__item-title">
+                <p class="features__item-text">900</p>
+                <div>кв/м</div>
+              </div>
+              <div class="features__item-text">
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей<br class="features__br"> и толкучки</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__item-title">
+                <p class="features__item-text">70</p>
+                <div>машин</div>
+              </div>
+              <div class="features__item-text">
+                <h3>Собственная парковка</h3>
+                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+              </div>
+            </li>
+            <li class="features__item features__item--decorated">
+              <p>100</p>
+              <div>Тренажеров</div>
+              <h3>Современные тренажеры на все&nbsp;группы&nbsp;мышц</h3>
+            </li>
+            <li class="features__item">
+              <div class="features__item-title">
+                <p class="features__item-text">350</p>
+                <div>мест</div>
+              </div>
+              <div class="features__item-text">
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки, душевые,&nbsp;фен, Wi-Fi, кулеры</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__item-title">
+                <p class="features__item-text">5+</p>
+                <div>лет</div>
+              </div>
+              <div class="features__item-text">
+                <h3>Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
   </div>

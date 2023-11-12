@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initScroll} from './extra-options/scroll';
 import {initYoutubeVideo} from './modules/video/init-video';
+import {initTabs} from './modules/tabs/init-tabs';
 import {initSliderJury} from './modules/sliders/init-slider-jury';
 
 // import {Form} from './modules/form-validate/form';
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initScroll();
     initYoutubeVideo();
+    initTabs();
     initSliderJury();
     // const form = new Form();
     // window.form = form;

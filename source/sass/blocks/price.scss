@@ -93,6 +93,7 @@
   color: $color-sapphire-50;
   position: relative;
   padding-bottom: 12px;
+  cursor: pointer;
 
   &--active {
     color: $color-sapphire;
@@ -124,6 +125,13 @@
     line-height: 16px;
     padding-bottom: 18px;
   }
+}
+
+.price__pagination-item button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .price__cards-wrapper {
