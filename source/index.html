@@ -29,7 +29,7 @@
     <header class="main-header">
       <div class="main-header__container">
         <nav class="main-header__nav main-nav">
-          <a class="main-nav__logo">
+          <a class="main-nav__logo" href="index.html">
             <img class="main-nav__svg" src="./img/logo.svg" width="120" height="26" alt="Логотип SUPERGYM.">
           </a>
           <ul class="main-nav__list">
@@ -50,7 +50,7 @@
           <div class="hero__wrapper hero__wrapper--main-text">
             <p class="hero__text">Омск</p>
             <h3 class="hero__title">Фитнес центр</h3>
-            <a class="hero__button button" href="#">Купить абонемент</a>
+            <a class="hero__button button" type="button" href="#price">Купить абонемент</a>
           </div>
           <div class="hero__wrapper hero__wrapper--image">
             <picture>
@@ -64,7 +64,7 @@
                 srcset="./img/hero/hero-image-desktop@2x.jpg 2x" alt="Тренер в футболке на главной странице.">
             </picture>
           </div>
-          <a class="hero__mobile-button button" href="#">Купить абонемент</a>
+          <a class="hero__mobile-button button" type="button" href="#price">Купить абонемент</a>
         </section>
       </div>
     </header>
@@ -101,7 +101,7 @@
                   srcset="./img/about/about-gym-desktop@2x.jpg 2x" alt="Фото тренажерного зала.">
               </picture>
             </div>
-            <div class="about__video">
+            <div class="about__video about__video--overlay" data-video="about-video">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" width="320" height="167"
                   srcset="./img/about/about-video-mobile@1x.webp 1x, ./img/about/about-video-mobile@2x.webp 2x">
@@ -116,16 +116,25 @@
                 <img src="./img/about/about-video-desktop@1x.jpg" width="364" height="228"
                   srcset="./img/about/about-video-desktop@2x.jpg 2x" alt="Фото тренажерного зала.">
               </picture>
-              <button class="about__play-button" type="button" aria-label="Запуск видео.">
+              <button class="about__play-button" type="button" aria-label="Запуск видео."
+                data-play-button="play-button">
                 <svg width="17" height="17" viewBox="0 0 17 17" role="img">
                   <use href="img/sprite.svg#play-button"></use>
                 </svg>
               </button>
             </div>
+
+
+
+
+
+
+
+
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <h2 class="visually-hidden">Блок с ценами</h2>
         <div class="price__container">
           <h3 class="price__title">Абонементы</h3>
@@ -177,7 +186,7 @@
         <!-- <img class="price__decoration-element" src="img/price/decoration.svg" width="460" height="720"> -->
       </section>
       <section class="games">
-        <h2 class="visually-hidden">Игры.</h2>
+        <h2 class="visually-hidden">Игры и жюри.</h2>
         <div class="games__news-container">
           <div class="games__text-wrapper">
             <div class="games__information">
@@ -204,8 +213,6 @@
             <p class="games__description">Ежегодные соревнования по CrossFit</p>
             <a class="games__button button" href="#">Заполнить анкету</a>
           </div>
-
-
           <div class="games__img-wrapper">
             <picture>
               <source type="image/webp" media="(max-width: 767px)" width="290" height="292"
@@ -222,19 +229,245 @@
                 srcset="./img/games/games-pic-desktop@2x.jpg 2x" alt="Фото тренажерного зала.">
             </picture>
           </div>
-
         </div>
-        <div class="games__jury-container">
-
+        <div class="games__jury-container jury">
+          <div class="jury__wrapper">
+            <button class="jury__button jury__button--prev" type="button" aria-label="Перейти к предыдущему слайду.">
+              <svg width="18" height="34">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="jury__swiper swiper">
+              <ul class="jury__list swiper-wrapper">
+                <li class="jury__item swiper-slide">
+                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp" width="260" height="294"
+                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-1@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-1@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                  </picture>
+                  <div class="jury__descriprion card-jury">
+                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <p class="card-jury__type">Stretching</p>
+                    <ul class="card-jury__achievement-list">
+                      <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
+                      <li class="card-jury__achievement-item">Мастер спорта России по фитнес-танцам</li>
+                      <li class="card-jury__achievement-item">Опыт — 4 года</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="jury__item swiper-slide">
+                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp" width="260" height="294"
+                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-2@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-2@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                  </picture>
+                  <div class="jury__descriprion card-jury">
+                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <p class="card-jury__type">Stretching</p>
+                    <ul class="card-jury__achievement-list">
+                      <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
+                      <li class="card-jury__achievement-item">Мастер спорта России по фитнес-танцам</li>
+                      <li class="card-jury__achievement-item">Опыт — 4 года</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="jury__item swiper-slide">
+                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp" width="260" height="294"
+                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-1@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-1@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                  </picture>
+                  <div class="jury__descriprion card-jury">
+                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <p class="card-jury__type">Stretching</p>
+                    <ul class="card-jury__achievement-list">
+                      <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
+                      <li class="card-jury__achievement-item">Мастер спорта России по фитнес-танцам</li>
+                      <li class="card-jury__achievement-item">Опыт — 4 года</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="jury__item swiper-slide">
+                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp" width="260" height="294"
+                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-2@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-2@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                  </picture>
+                  <div class="jury__descriprion card-jury">
+                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <p class="card-jury__type">Stretching</p>
+                    <ul class="card-jury__achievement-list">
+                      <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
+                      <li class="card-jury__achievement-item">Мастер спорта России по фитнес-танцам</li>
+                      <li class="card-jury__achievement-item">Опыт — 4 года</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="jury__item swiper-slide">
+                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp" width="260" height="294"
+                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-1@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-1@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                  </picture>
+                  <div class="jury__descriprion card-jury">
+                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <p class="card-jury__type">Stretching</p>
+                    <ul class="card-jury__achievement-list">
+                      <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
+                      <li class="card-jury__achievement-item">Мастер спорта России по фитнес-танцам</li>
+                      <li class="card-jury__achievement-item">Опыт — 4 года</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="jury__item swiper-slide">
+                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp" width="260" height="294"
+                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-2@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-2@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                  </picture>
+                  <div class="jury__descriprion card-jury">
+                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <p class="card-jury__type">Stretching</p>
+                    <ul class="card-jury__achievement-list">
+                      <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
+                      <li class="card-jury__achievement-item">Мастер спорта России по фитнес-танцам</li>
+                      <li class="card-jury__achievement-item">Опыт — 4 года</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="jury__item swiper-slide">
+                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp" width="260" height="294"
+                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-1@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-1@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                  </picture>
+                  <div class="jury__descriprion card-jury">
+                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <p class="card-jury__type">Stretching</p>
+                    <ul class="card-jury__achievement-list">
+                      <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
+                      <li class="card-jury__achievement-item">Мастер спорта России по фитнес-танцам</li>
+                      <li class="card-jury__achievement-item">Опыт — 4 года</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="jury__item swiper-slide">
+                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp" width="260" height="294"
+                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-2@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-2@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                  </picture>
+                  <div class="jury__descriprion card-jury">
+                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <p class="card-jury__type">Stretching</p>
+                    <ul class="card-jury__achievement-list">
+                      <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
+                      <li class="card-jury__achievement-item">Мастер спорта России по фитнес-танцам</li>
+                      <li class="card-jury__achievement-item">Опыт — 4 года</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="jury__button jury__button--next" type="button" aria-label="Следующий слайд.">
+              <svg width="18" height="34">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
 
-    </main>
+
+      <section class="features">
+
+        <h2 class="features__title">Наши преимущества</h2>
+          <div class="features__wrapper">
+            <ul class="features__list">
+              <li class="features__item">
+                <div class="features__item-title">
+                  <p class="features__item-text">900</p>
+                  <div>кв/м</div>
+                </div>
+                <div class="features__item-text">
+                  <h3>Площадь</h3>
+                  <p>Занимайтесь без очередей<br class="features__br"> и толкучки</p>
+                </div>
+              </li>
+              <li class="features__item">
+                <div class="features__item-title">
+                  <p class="features__item-text">70</p>
+                  <div>машин</div>
+                </div>
+                <div class="features__item-text">
+                  <h3>Собственная парковка</h3>
+                  <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+                </div>
+              </li>
+              <li class="features__item features__item--decorated">
+                <p>100</p>
+                <div>Тренажеров</div>
+                <h3>Современные тренажеры на все&nbsp;группы&nbsp;мышц</h3>
+              </li>
+              <li class="features__item">
+                <div class="features__item-title">
+                  <p class="features__item-text">350</p>
+                  <div>мест</div>
+                </div>
+                <div class="features__item-text">
+                  <h3>Комфорт</h3>
+                  <p>Просторные раздевалки, душевые,&nbsp;фен, Wi-Fi, кулеры</p>
+                </div>
+              </li>
+              <li class="features__item">
+                <div class="features__item-title">
+                  <p class="features__item-text">5+</p>
+                  <div>лет</div>
+                </div>
+                <div class="features__item-text">
+                  <h3>Тренерский опыт</h3>
+                  <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </section>
+
   </div>
-  <!-- <script src="js/vendor.js"></script> -->
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  </section>
+
+
+
+
+
+
+
+  </div>
+  </section>
+
+
+  </main>
+  </div>
+
+  <script src="js/vendor.min.js" defer></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

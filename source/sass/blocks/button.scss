@@ -11,6 +11,23 @@
   border: 2px solid $color-default-white;
   color: $color-default-white;
   text-transform: uppercase;
+  background-color: transparent;
+
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
+  }
+
+  &:active:not([disabled]) {
+    background-color: $color-default-white;
+    color: $color-sapphire;
+  }
+
+  &[disabled] {
+    color: $color-default-white-50;
+    border-color: $color-default-white-50;
+  }
 
   &--light {
     border: 2px solid $color-sapphire;

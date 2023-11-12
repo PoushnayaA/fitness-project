@@ -34,10 +34,26 @@
 
 .main-nav__logo {
   margin: auto 0;
+  cursor: pointer;
 }
 
 .main-nav__link {
   color: $color-default-white;
+
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
+    color: $color-resolution-blue;
+  }
+
+  &:active:not([disabled]) {
+    color: $color-sapphire;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+  }
+
+  &[disabled] {
+    opacity: 50%;
+  }
 }
 
 @media (max-width: $vp-1365) {
