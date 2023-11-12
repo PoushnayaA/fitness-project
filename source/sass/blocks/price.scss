@@ -56,7 +56,7 @@
   width: fit-content;
   margin: 0 auto 36px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 50px;
   position: relative;
 
@@ -73,14 +73,16 @@
 
 @media (max-width: $vp-1365) {
   .price__pagination-list {
-    gap: 37px;
+    gap: 0;
+    justify-content: space-between;
     margin-bottom: 44px;
+    width: 332px;
   }
 }
 
 @media (max-width: $vp-767) {
   .price__pagination-list {
-    gap: 29px;
+    width: 290px;
     margin-bottom: 34px;
   }
 }

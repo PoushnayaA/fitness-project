@@ -2182,9 +2182,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 50px;
   position: relative;
 }
@@ -2200,13 +2200,17 @@ button,
 
 @media (max-width: 1365px) {
   .price__pagination-list {
-    gap: 37px;
+    gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 44px;
+    width: 332px;
   }
 }
 @media (max-width: 768px) {
   .price__pagination-list {
-    gap: 29px;
+    width: 290px;
     margin-bottom: 34px;
   }
 }
