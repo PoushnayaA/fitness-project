@@ -134,21 +134,21 @@
           </div>
         </div>
       </section>
-
-
       <section class="price" id="price">
         <h2 class="visually-hidden">Блок с ценами</h2>
         <div class="price__container" data-tabs="parent">
           <h3 class="price__title">Абонементы</h3>
           <ul class="price__pagination-list" data-tabs="controls">
-            <li class="price__pagination-item"><button data-tabs="control">1
+            <li class="price__pagination-item"><button data-tabs="control" data-price-card="price-pagination">1
                 месяц</button></li>
-            <li class="price__pagination-item"><button data-tabs="control">6 месяцев</button></li>
-            <li class="price__pagination-item"><button data-tabs="control">12 месяцев</button></li>
+            <li class="price__pagination-item"><button data-tabs="control" data-price-card="price-pagination">6
+                месяцев</button></li>
+            <li class="price__pagination-item"><button data-tabs="control" data-price-card="price-pagination">12
+                месяцев</button></li>
           </ul>
           <div class="price__cards-content" data-tabs="content">
             <ul class="price__cards-wrapper" data-tabs="element">
-              <li class="price__card">
+              <li class="price__card" data-price-card="price-card">
                 <div class="price__card-name">С тренером</div>
                 <p class="price__card-description">12 занятий</p>
                 <div class="price__card-price">
@@ -160,7 +160,7 @@
                 </div>
                 <button class="price__button button button--light">Купить абонемент</button>
               </li>
-              <li class="price__card price__card--active">
+              <li class="price__card price__card--active" data-price-card="price-card">
                 <div class="price__card-name">Дневной</div>
                 <p class="price__card-description">с 8:00 до 17:00</p>
                 <div class="price__card-price">
@@ -170,9 +170,9 @@
                     <use href="img/sprite.svg#rouble"></use>
                   </svg>
                 </div>
-                <button class="price__button button button--main">Купить абонемент</button>
+                <button class="price__button button button--light button--main">Купить абонемент</button>
               </li>
-              <li class="price__card">
+              <li class="price__card" data-price-card="price-card">
                 <div class="price__card-name">Полный день</div>
                 <p class="price__card-description">с 8:00 до 22:00</p>
                 <div class="price__card-price">
@@ -186,7 +186,7 @@
               </li>
             </ul>
             <ul class="price__cards-wrapper" data-tabs="element">
-              <li class="price__card">
+              <li class="price__card" data-price-card="price-card">
                 <div class="price__card-name">С тренером</div>
                 <p class="price__card-description">12 занятий</p>
                 <div class="price__card-price">
@@ -198,7 +198,7 @@
                 </div>
                 <button class="price__button button button--light">Купить абонемент</button>
               </li>
-              <li class="price__card price__card--active">
+              <li class="price__card price__card--active" data-price-card="price-card">
                 <div class="price__card-name">Дневной</div>
                 <p class="price__card-description">с 8:00 до 17:00</p>
                 <div class="price__card-price">
@@ -210,7 +210,7 @@
                 </div>
                 <button class="price__button button button--main">Купить абонемент</button>
               </li>
-              <li class="price__card">
+              <li class="price__card" data-price-card="price-card">
                 <div class="price__card-name">Полный день</div>
                 <p class="price__card-description">с 8:00 до 22:00</p>
                 <div class="price__card-price">
@@ -224,7 +224,7 @@
               </li>
             </ul>
             <ul class="price__cards-wrapper" data-tabs="element">
-              <li class="price__card">
+              <li class="price__card" data-price-card="price-card">
                 <div class="price__card-name">С тренером</div>
                 <p class="price__card-description">12 занятий</p>
                 <div class="price__card-price">
@@ -236,7 +236,7 @@
                 </div>
                 <button class="price__button button button--light">Купить абонемент</button>
               </li>
-              <li class="price__card price__card--active">
+              <li class="price__card price__card--active" data-price-card="price-card">
                 <div class="price__card-name">Дневной</div>
                 <p class="price__card-description">с 8:00 до 17:00</p>
                 <div class="price__card-price">
@@ -248,7 +248,7 @@
                 </div>
                 <button class="price__button button button--main">Купить абонемент</button>
               </li>
-              <li class="price__card">
+              <li class="price__card" data-price-card="price-card">
                 <div class="price__card-name">Полный день</div>
                 <p class="price__card-description">с 8:00 до 22:00</p>
                 <div class="price__card-price">
@@ -264,11 +264,6 @@
           </div>
         </div>
       </section>
-
-
-
-
-
       <section class="games">
         <h2 class="visually-hidden">Игры и жюри.</h2>
         <div class="games__news-container">
@@ -342,15 +337,15 @@
                   </div>
                 </li>
                 <li class="jury__item swiper-slide">
-                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <h3 class="jury__item-title">Алексей Лавров</h3>
                   <picture>
                     <source type="image/webp" width="260" height="294"
-                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-2@2x.webp 2x">
+                      srcset="./img/games/jury-2@1x.webp 1x, ./img/games/jury-2@2x.webp 2x">
                     <img class="jury__item-img" src="./img/games/jury-2@1x.jpg" width="260" height="294"
-                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                      srcset="./img/games/jury-2@2x.jpg 2x" alt="Алексей Лавров.">
                   </picture>
                   <div class="jury__descriprion card-jury">
-                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <h4 class="card-jury__name">Алексей Лавров</h4>
                     <p class="card-jury__type">Stretching</p>
                     <ul class="card-jury__achievement-list">
                       <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
@@ -360,15 +355,15 @@
                   </div>
                 </li>
                 <li class="jury__item swiper-slide">
-                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <h3 class="jury__item-title">Александр Пашков</h3>
                   <picture>
                     <source type="image/webp" width="260" height="294"
-                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-1@2x.webp 2x">
-                    <img class="jury__item-img" src="./img/games/jury-1@1x.jpg" width="260" height="294"
-                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                      srcset="./img/games/jury-3@1x.webp 1x, ./img/games/jury-3@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-3@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-3@2x.jpg 2x" alt="Александр Пашков.">
                   </picture>
                   <div class="jury__descriprion card-jury">
-                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <h4 class="card-jury__name">Александр Пашков</h4>
                     <p class="card-jury__type">Stretching</p>
                     <ul class="card-jury__achievement-list">
                       <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
@@ -378,15 +373,15 @@
                   </div>
                 </li>
                 <li class="jury__item swiper-slide">
-                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <h3 class="jury__item-title">Мария Кетова</h3>
                   <picture>
                     <source type="image/webp" width="260" height="294"
-                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-2@2x.webp 2x">
-                    <img class="jury__item-img" src="./img/games/jury-2@1x.jpg" width="260" height="294"
-                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                      srcset="./img/games/jury-4@1x.webp 1x, ./img/games/jury-4@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-4@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-4@2x.jpg 2x" alt="Мария Кетова.">
                   </picture>
                   <div class="jury__descriprion card-jury">
-                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <h4 class="card-jury__name">Мария Кетова</h4>
                     <p class="card-jury__type">Stretching</p>
                     <ul class="card-jury__achievement-list">
                       <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
@@ -396,15 +391,15 @@
                   </div>
                 </li>
                 <li class="jury__item swiper-slide">
-                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <h3 class="jury__item-title">Вера Смирнова</h3>
                   <picture>
                     <source type="image/webp" width="260" height="294"
-                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-1@2x.webp 2x">
-                    <img class="jury__item-img" src="./img/games/jury-1@1x.jpg" width="260" height="294"
-                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                      srcset="./img/games/jury-5@1x.webp 1x, ./img/games/jury-5@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-5@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-5@2x.jpg 2x" alt="Вера Смирнова.">
                   </picture>
                   <div class="jury__descriprion card-jury">
-                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <h4 class="card-jury__name">Вера Смирнова</h4>
                     <p class="card-jury__type">Stretching</p>
                     <ul class="card-jury__achievement-list">
                       <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
@@ -414,15 +409,15 @@
                   </div>
                 </li>
                 <li class="jury__item swiper-slide">
-                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <h3 class="jury__item-title">Сергей Жуков</h3>
                   <picture>
                     <source type="image/webp" width="260" height="294"
-                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-2@2x.webp 2x">
-                    <img class="jury__item-img" src="./img/games/jury-2@1x.jpg" width="260" height="294"
-                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                      srcset="./img/games/jury-6@1x.webp 1x, ./img/games/jury-6@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-6@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-6@2x.jpg 2x" alt="Сергей Жуков.">
                   </picture>
                   <div class="jury__descriprion card-jury">
-                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <h4 class="card-jury__name">Сергей Жуков</h4>
                     <p class="card-jury__type">Stretching</p>
                     <ul class="card-jury__achievement-list">
                       <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
@@ -432,15 +427,15 @@
                   </div>
                 </li>
                 <li class="jury__item swiper-slide">
-                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <h3 class="jury__item-title">Владимир Конев</h3>
                   <picture>
                     <source type="image/webp" width="260" height="294"
-                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-1@2x.webp 2x">
-                    <img class="jury__item-img" src="./img/games/jury-1@1x.jpg" width="260" height="294"
-                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                      srcset="./img/games/jury-7@1x.webp 1x, ./img/games/jury-7@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-7@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-7@2x.jpg 2x" alt="Владимир Конев.">
                   </picture>
                   <div class="jury__descriprion card-jury">
-                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <h4 class="card-jury__name">Владимир Конев</h4>
                     <p class="card-jury__type">Stretching</p>
                     <ul class="card-jury__achievement-list">
                       <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
@@ -450,15 +445,15 @@
                   </div>
                 </li>
                 <li class="jury__item swiper-slide">
-                  <h3 class="jury__item-title">Анна Павлова</h3>
+                  <h3 class="jury__item-title">Светлана Митина</h3>
                   <picture>
                     <source type="image/webp" width="260" height="294"
-                      srcset="./img/games/jury-1@1x.webp 1x, ./img/games/jury-2@2x.webp 2x">
-                    <img class="jury__item-img" src="./img/games/jury-2@1x.jpg" width="260" height="294"
-                      srcset="./img/games/jury-1@2x.jpg 2x" alt="Анна Павлова.">
+                      srcset="./img/games/jury-8@1x.webp 1x, ./img/games/jury-8@2x.webp 2x">
+                    <img class="jury__item-img" src="./img/games/jury-8@1x.jpg" width="260" height="294"
+                      srcset="./img/games/jury-8@2x.jpg 2x" alt="Светлана Митина.">
                   </picture>
                   <div class="jury__descriprion card-jury">
-                    <h4 class="card-jury__name">Анна Павлова</h4>
+                    <h4 class="card-jury__name">Светлана Митина</h4>
                     <p class="card-jury__type">Stretching</p>
                     <ul class="card-jury__achievement-list">
                       <li class="card-jury__achievement-item">Дипломированный специалист МГПУ</li>
@@ -479,7 +474,7 @@
       </section>
       <section class="features">
         <h2 class="features__title">Наши преимущества</h2>
-        <div class="features__wrapper">
+        <div class="features__container">
           <ul class="features__list">
             <li class="features__item">
               <div class="features__item-title">
@@ -525,6 +520,47 @@
                 <h3>Тренерский опыт</h3>
                 <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="offers" data-test="offers">
+        <div class="offers__container">
+          <h2 class="offers__title">Акции</h2>
+          <ul class="offers__list">
+            <li class="offers__item offers__item--primary">
+              <div class="offers__item-description">
+                <h3>Год</h3>
+                <span>4999</span>
+                <p>Безлимитный абонемент в тренажерный зал</p>
+                <a class="offers__item-link" href="#">Подробнее</a>
+              </div>
+              <div class="offers__item-image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="290" height="330"
+                    srcset="./img/offers/offers-mobile@1x.webp 1x, ./img/offers/offers-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="399" height="462"
+                    srcset="./img/offers/offers-tablet@1x.webp 1x, ./img/offers/offers-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="462"
+                    srcset="./img/offers/offers-desktop@1x.webp 1x, ./img/offers/offers-desktop@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="290" height="330"
+                    srcset="./img/offers/offers-mobile@1x.jpg 1x, ./img/offers/offers-mobile@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="399" height="462"
+                    srcset="./img/offers/offers-tablet@1x.jpg 1x, ./img/offers/offers-tablet@2x.jpg 2x">
+                  <img src="./img/offers/offers-desktop@1x.jpg" width="280" height="462"
+                    srcset="./img/offers/offers-desktop@2x.jpg 2x" alt="Спортивная девушка в синем костюме.">
+                </picture>
+              </div>
+            </li>
+            <li class="offers__item offers__item--sale">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+              <a class="offers__item-link" href="#">Подробнее</a>
+            </li>
+            <li class="offers__item offers__item--sale">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с командой</p>
+              <a class="offers__item-link" href="#">Подробнее</a>
             </li>
           </ul>
         </div>

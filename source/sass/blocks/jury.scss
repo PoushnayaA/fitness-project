@@ -1,3 +1,235 @@
 .jury {
+  position: relative;
+}
 
+.jury__button svg {
+  color:  $color-sapphire;
+  position: absolute;
+  transform: translate(-50%, 50%);
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.jury__button--next svg {
+  right: 12px;
+  top: -7px;
+
+  @include vp-767 {
+    right: 10px;
+    top: 2px;
+  }
+}
+
+.jury__button--prev svg {
+  left: 24px;
+  top: -7px;
+
+  @include vp-767 {
+    left: 11px;
+    top: 0;
+  }
+}
+
+.jury__button {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: transparent;
+  top: 30%;
+  right: -74px;
+
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus-visible {
+    border: 1px solid $color-sapphire;
+  }
+
+  &:not(:disabled):active {
+    background-color: $color-sapphire;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  @include vp-1365 {
+    top: 42.5%;
+    right: -18px;
+  }
+
+  @include vp-767 {
+    right: -2px;
+    top: 47.5%;
+    height: 40px;
+    width: 40px;
+  }
+
+  &--next {
+    right: -10%;
+    transform: rotate(180deg);
+  }
+
+  &--prev {
+    left: -10%;
+    top: 30%;
+    // left: -72px;
+    @include vp-1365 {
+      top: 42.9%;
+      left: -16px;
+    }
+
+    @include vp-767 {
+      top: 47.5%;
+      left: -3px;
+    }
+  }
+}
+
+.jury__button:not(:disabled):active svg {
+  color: $color-default-white;
+}
+
+.jury__wrapper {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 8px 0 120px;
+
+  @include vp-1365 {
+    padding-top: 0;
+    padding-bottom: 100px;
+    margin-top: -3px;
+    width: 678px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 70px;
+    padding-top: 8px;
+    width: 284px;
+  }
+}
+
+.jury__title {
+  margin: 0 0 39px 0;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 1.62px;
+
+  @include vp-1365 {
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 38px;
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.jury__swiper {
+  @include vp-1365 {
+    margin: 0 55px;
+  }
+
+  @include vp-767 {
+    margin: 0 32px;
+  }
+}
+
+.jury__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jury__item {
+  position: relative;
+  color: $color-default-white;
+  background-color: $color-sapphire-89;
+
+  &:hover h3,
+  &:focus h3 {
+    display: none;
+  }
+
+  &:hover .jury__descriprion,
+  &:focus .jury__descriprion {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  @include vp-1365 {
+    width: 268px;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    // max-height: 548px;
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.jury__item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-1365 {
+    // max-height: 588px;
+    width: 268px;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    // max-height: 548px;
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.jury__item-title {
+  position: absolute;
+  margin: 0;
+  padding: 0 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+
+  @include vp-1365 {
+    font-size: 20px;
+    bottom: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    bottom: 20px;
+  }
+}
+
+.jury__descriprion {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

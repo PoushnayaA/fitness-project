@@ -11,18 +11,8 @@ const initSliderJury = () => {
         nextEl: buttonNext,
         prevEl: buttonPrev,
       },
-      // direction: 'vertical',
 
       loop: true,
-
-      // direction: 'horizontal',
-
-      // slidesPerView: 3,
-      // spaceBetween: 20,
-      // autoplay: {
-      //   delay: 5000,
-      //   disableOnInteraction: false,
-      // },
 
       breakpoints: {
         1366: {

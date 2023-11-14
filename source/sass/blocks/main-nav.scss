@@ -37,6 +37,21 @@
   cursor: pointer;
 }
 
+@media (max-width: $vp-1365) {
+  .main-nav__logo img {
+    width: 111px;
+    height: 24px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .main-nav__logo img {
+    width: 102px;
+    height: 22px;
+  }
+}
+
 .main-nav__link {
   color: $color-default-white;
 

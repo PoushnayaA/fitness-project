@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow"><g fill="none"><path stroke="#102654" d="m1 1 16 16L1 33"/></g></symbol><symbol id="play-button">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow" viewBox="0 0 18 34"><g fill="none">
+<path d="M17 1L0.999999 17L17 33" stroke="currentColor"/>
+</g></symbol><symbol id="play-button">
 <path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z"/>
 </symbol><symbol id="rouble" viewBox="0 0 30 42"><g fill="none">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654"/>

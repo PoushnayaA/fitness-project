@@ -11,7 +11,8 @@
   width: 1366px;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  // border: 1px solid black;
+  margin-bottom: 140px;
   min-height: 500px;
 }
 
@@ -28,18 +29,23 @@
   }
 }
 
+.games__jury-container {
+  margin: 0 auto;
+  width: 1366px;
+}
 
 @media (max-width: $vp-1365) {
-  .games__news-container {
-    width: 678px;
+  .games__jury-container {
+    width: 768px;
   }
 }
 
-// @media (max-width: $vp-767) {
-//   .games__news-container {
-//     width: 290px;
-//   }
-// }
+@media (max-width: $vp-767) {
+  .games__jury-container {
+    width: 320px;
+  }
+}
+
 
 .games__text-wrapper {
   display: flex;

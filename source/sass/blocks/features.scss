@@ -1,24 +1,26 @@
 .features {
   background-color: $color-ghost-white;
+  width: 100%;
+  padding-top: 100px;
 }
 
-.features .container {
-  @include vp-767 {
-    padding: 0;
-  }
-}
-
-.features__wrapper {
+.features__container {
   margin: 0 auto;
-  max-width: 1040px;
-  padding: 120px 0;
+  width: 1366px;
+  padding: 0 0 120px;
+}
 
-  @include vp-1365 {
-    padding: 101px 0 78px;
+@media (max-width: $vp-1365) {
+  .features__container {
+    width: 768px;
+    padding: 0 0 78px;
   }
+}
 
-  @include vp-767 {
-    padding: 71px 0 69px;
+@media (max-width: $vp-767) {
+  .features__container {
+    width: 320px;
+    padding: 0 0 69px;
   }
 }
 
