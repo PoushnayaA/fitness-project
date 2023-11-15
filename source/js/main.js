@@ -4,6 +4,7 @@ import {initActiveCard} from './extra-options/active-card';
 import {initYoutubeVideo} from './modules/video/init-video';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initSliderJury} from './modules/sliders/init-slider-jury';
+import {initAccordions} from './modules/accordion/init-accordion';
 
 // import {Form} from './modules/form-validate/form';
 
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initActiveCard();
     initSliderJury();
+    initAccordions();
     // const form = new Form();
     // window.form = form;
     // form.init();

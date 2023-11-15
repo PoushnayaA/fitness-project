@@ -1,0 +1,154 @@
+.faq {
+  background-color: $color-ghost-white;
+  font-family: $ff-roboto;
+  color: #102654;
+}
+
+.faq__container {
+  width: 1160px;
+  padding: 120px 0 119px;
+  margin: 0 auto;
+
+  @include vp-1365 {
+    padding: 101px 0 100px;
+    width: 678px;
+  }
+
+  @include vp-767 {
+    padding: 71px 0 70px;
+    width: 290px;
+  }
+}
+
+.faq__title {
+  margin: 0 0 51px 0;
+  font-family: $ff-alumni;
+  color: #102654;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 49px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 36px;
+  }
+}
+
+.faq__wrapper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 22.4% 74.2%;
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+  }
+}
+
+.faq__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include vp-1365 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(2, 141px);
+    justify-content: center;
+  }
+
+  @media (max-width: 319px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.faq__control {
+  padding: 19px 18px 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-sapphire;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #10265433;
+
+  @include hover-focus {
+    border-color: $color-sapphire;
+  }
+
+  &.is-active {
+    color: $color-default-white;
+    background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    padding: 20px 18px 16px;
+    border: none;
+  }
+
+  &.is-disabled {
+    color: #c8c9cc;
+    border-color: #10265433;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  @include vp-1365 {
+    width: 100%;
+
+    &.is-active {
+      padding-left: 19px;
+      padding-right: 19px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 15px 18px 11px;
+
+    &.is-active {
+      padding: 16px 18px 12px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    max-width: 141px;
+  }
+
+  @media (max-width: 319px) {
+    max-width: 100%;
+  }
+}
+
+.faq__lists {
+  margin: -1px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq__list {
+  width: 100%;
+  border-bottom: 1px solid #1c337433;
+}

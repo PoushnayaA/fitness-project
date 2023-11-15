@@ -23,6 +23,7 @@ const initActiveCard = () => {
     list.addEventListener('click', () => {
       for (let i = 1; i < cardsArray.length; i++) {
         cardsArray[i].classList.add('price__card--active');
+        cardsArray[i].querySelector('button').classList.add('button--main');
         i++;
         i++;
       }
