@@ -224,11 +224,11 @@
   }
 }
 
-.offers__item-image {
+.offers__item-image-container {
   background-color: $color-dark-cerulean-50;
 }
 
-.offers__item-image img {
+.offers__item-image {
   object-fit: cover;
   width: 100%;
   height: 100%;

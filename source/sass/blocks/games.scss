@@ -6,26 +6,30 @@
 
 .games__news-container {
   margin: 0 auto;
-  display: flex;
   color: $color-default-white;
-  width: 1366px;
-  align-items: center;
-  justify-content: center;
+  width: 1160px;
   // border: 1px solid black;
   margin-bottom: 140px;
   min-height: 500px;
+  display: grid;
+  grid-column: span 2;
+  grid-row: span 1;
+  grid-template-columns: 1fr auto;
 }
 
 @media (max-width: $vp-1365) {
   .games__news-container {
-    width: 768px;
+    width: 678px;
     min-height: 324px;
   }
 }
 
 @media (max-width: $vp-767) {
   .games__news-container {
-    width: 320px;
+    width: 290px;
+    grid-template-columns: 1fr;
+    grid-column: span 1;
+    grid-row: span 2;
   }
 }
 
@@ -55,16 +59,25 @@
   min-height: 500px;
   height: 100%;
   padding: 80px 81px 30px;
-}
 
-@media (max-width: $vp-1365) {
-  .games__text-wrapper {
+  @include vp-1365 {
     width: 292px;
     min-height: 324px;
+    padding: 40px 45px;
+  }
+
+  @include vp-767 {
+    padding: 40px 43px 40px 40px;
+    min-height: 309px;
   }
 }
 
 .games__img-wrapper {
+  height: 100%;
+}
+
+.games__img {
+  width: 100%;
   height: 100%;
 }
 
@@ -83,6 +96,15 @@
   max-width: 180px;
   margin-top: 0;
   margin-bottom: 24px;
+
+  @include vp-1365 {
+    font-size: 48px;
+    line-height: 46px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
 }
 
 .games__dates {
@@ -90,6 +112,14 @@
   flex-direction: column;
   gap: 20px;
   margin-left: 2px;
+
+  @include vp-1365 {
+    gap: 8px;
+  }
+
+  @include vp-767 {
+    gap: 6px;
+  }
 }
 
 .games__text {
@@ -97,6 +127,15 @@
   font-weight: 300;
   line-height: 24px;
   margin-bottom: 12px;
+
+  @include vp-1365 {
+    margin-bottom: 3px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .games__numbers-wrapper {
@@ -120,6 +159,16 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  // @include vp-767 {
+  //   font-size: 16px;
+  //   line-height: 20px;
+  // }
 }
 
 .games__number {
@@ -130,17 +179,37 @@
   justify-content: space-around;
   margin-left: 8px;
   flex-direction: column;
+
+  @include vp-1365 {
+    font-size: 10px;
+    line-height: 10px;
+    margin-left: 3px;
+  }
 }
 
 .games__description {
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
+
+  @include vp-1365 {
+    margin: 0;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 170px;
+  }
 }
 
 .games__button {
   width: 100%;
   margin: 40px 0;
+
+  @include vp-1365 {
+    margin: 20px 0 0;
+  }
 }
 
 

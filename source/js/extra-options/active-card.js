@@ -10,7 +10,6 @@ const changeActiveCard = (card) => {
       if (element.classList.contains('price__card--active')) {
         element.classList.remove('price__card--active');
         element.querySelector('button').classList.remove('button--main');
-        element.querySelector('button').classList.remove('button--light');
       }
     });
     cardsArray[card].classList.add('price__card--active');
