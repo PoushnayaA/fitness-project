@@ -1,0 +1,102 @@
+.footer {
+  font-family: $ff-roboto;
+  color: #102654;
+  text-align: left;
+}
+
+.footer__wrapper {
+  background-color: #030A1A;
+  color: #ffffff;
+
+  &--inf {
+    color: #102654;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include vp-1365 {
+      background-color: none;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.form__inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form__input {
+  width: 50px;
+  color: #ffffff;
+
+  @include vp-1365 {
+    width: 100%;
+  }
+
+}
+
+.form__input input {
+  background-color: transparent;
+  border: none;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #74819C;
+  width: 190px;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+
+  @include vp-1365 {
+    width: 100%;
+  }
+}
+
+.form__input:hover input,
+.form__input input:not(:invalid) {
+  border-bottom: 1px solid #ffffff;
+}
+
+.form__input:focus input,
+.form__input:active input,
+.form__input input:focus {
+  border: 1px solid #ffffff;
+}
+
+.form__input input::placeholder {
+  color: #ffffff;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.form__input input {
+  color: #ffffff;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.form__input input[disabled]::placeholder {
+  color: #74819C;
+}
+
+.form__input input[disabled] {
+  border: none;
+  border-bottom: 1px solid #74819C;
+}
+
+.form__input label {
+  width: 190px;
+}
+
+.form__button {
+  width: 100%;
+  margin: 20px 0;
+}

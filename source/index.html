@@ -50,7 +50,7 @@
           <div class="hero__wrapper hero__wrapper--main-text">
             <p class="hero__text">Омск</p>
             <h3 class="hero__title">Фитнес центр</h3>
-            <a class="hero__button button" type="button" href="#price">Купить абонемент</a>
+            <a class="hero__button button" href="#price">Купить абонемент</a>
           </div>
           <div class="hero__wrapper hero__wrapper--image">
             <picture>
@@ -64,7 +64,7 @@
                 srcset="./img/hero/hero-image-desktop@2x.jpg 2x" alt="Тренер в футболке на главной странице.">
             </picture>
           </div>
-          <a class="hero__mobile-button button" type="button" href="#price">Купить абонемент</a>
+          <a class="hero__mobile-button button" href="#price">Купить абонемент</a>
         </section>
       </div>
     </header>
@@ -123,14 +123,6 @@
                 </svg>
               </button>
             </div>
-
-
-
-
-
-
-
-
           </div>
         </div>
       </section>
@@ -876,39 +868,39 @@
       </section>
     </main>
     <footer class="footer" data-test="footer">
-      <div class="feedback-contacts-wrapper">
-        <section class="feedback">
+      <div class="footer__wrapper footer__wrapper--inf">
+        <section class="footer__content-container feedback">
           <div class="feedback__wrapper">
             <h2 class="feedback__title">Бесплатное занятие</h2>
-            <div class="feedback__form form" data-form-validate="data-form-validate" data-callback="base">
+            <div class="feedback__form form">
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <div class="form__inputs">
-                  <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Обязательное поле" data-required="data-required">
+                  <div class="form__input custom-input" data-message-base="Обязательное поле"
+                    data-required="data-required">
                     <label aria-label="Ваше имя.">
                       <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
                     </label>
                   </div>
-                  <div class="custom-input" data-validate-type="phone" data-message-base="Обязательное поле" data-required="data-required">
+                  <div class="form__input custom-input" data-message-base="Обязательное поле"
+                    data-required="data-required">
                     <label aria-label="Ваш номер телефона.">
                       <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
                     </label>
                   </div>
                 </div>
-                <button class="form__button btn btn--form" type="submit">Отправить</button>
+                <button class="form__button button" type="submit">Отправить</button>
               </form>
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="footer__content-container contacts">
           <div class="contacts__wrapper">
             <h2 class="contacts__title">Контакты</h2>
-            <div class="contacts__lists">
-              <ul class="contacts__list contacts__list--left">
+            <div class="contacts__list-wrapper">
+              <ul class="contacts__list">
                 <li class="contacts__item">
                   <h3>Адрес:</h3>
-                  <address>
-                    <p>г. Омск, ул. 60 лет Октября, 7</p>
-                  </address>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
                 </li>
                 <li class="contacts__item">
                   <h3>График работы:</h3>
@@ -929,48 +921,48 @@
           </div>
         </section>
       </div>
-      <div class="container">
-        <div class="footer__wrapper">
-          <div class="footer__logo">
-            <a href="#">
-              <img src="img/content/logo-footer.svg" width="109" height="24" alt="Логотип Supergym">
+      <div class="footer__wrapper social">
+        <div class="social__wrapper">
+          <div class="social__logo">
+            <a class="social__link" href="#">
+              <img class="social__svg" src="./img/footer-logo.svg" width="109" height="24" alt="Логотип SUPERGYM.">
             </a>
           </div>
-          <ul class="footer__navigation">
-            <li class="footer__navigation-item">
-              <a href="#">Услуги</a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">Услуги</a>
             </li>
-            <li class="footer__navigation-item">
-              <a href="#">Абонементы</a>
+            <li class="social__item">
+              <a class="social__link" href="#">Абонементы</a>
             </li>
-            <li class="footer__navigation-item">
-              <a href="#">Акции</a>
+            <li class="social__item">
+              <a class="social__link" href="#">Акции</a>
             </li>
-            <li class="footer__navigation-item">
-              <a href="#">Тренеры</a>
+            <li class="social__item">
+              <a class="social__link" href="#">Тренеры</a>
             </li>
-            <li class="footer__navigation-item">
-              <a href="#">Расписание</a>
+            <li class="social__item">
+              <a class="social__link" href="#">Расписание</a>
             </li>
           </ul>
-          <ul class="footer__social-list">
-            <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте.">
-                <svg width="25" height="25" role="img">
+          <ul class="social__social-list">
+            <li class="social__social-item">
+              <a class="social__social-link" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте.">
+                <svg width="14" height="14" role="img">
                   <use href="img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link--ok" href="https://ok.ru/htmlacademy" aria-label="Мы в Одноклассниках.">
-                <svg width="25" height="25" role="img">
+            <li class="social__social-item">
+              <a class="social__social-link" href="https://ok.ru/htmlacademy" aria-label="Мы в Одноклассниках.">
+                <svg width="10" height="15" role="img">
                   <use href="img/sprite.svg#ok"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link--reddit" href="https://www.reddit.com" aria-label="Мы на Реддите.">
-                <svg width="25" height="25" role="img">
+            <li class="social__social-item">
+              <a class="social__social-link" href="https://www.reddit.com" aria-label="Мы на Реддите.">
+                <svg width="14" height="14" role="img">
                   <use href="img/sprite.svg#reddit"></use>
                 </svg>
               </a>
