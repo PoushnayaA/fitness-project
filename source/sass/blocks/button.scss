@@ -11,15 +11,16 @@
   border: 2px solid $color-default-white;
   color: $color-default-white;
   text-transform: uppercase;
-  background-color: transparent;
+  background-color: $color-transparent;
+  z-index: 5;
 
-  &:hover:not([disabled]),
-  &:focus:not([disabled]) {
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
     background-color: $color-default-white;
     color: $color-egyptian-blue;
   }
 
-  &:active:not([disabled]) {
+  &:active:not(:disabled) {
     background-color: $color-default-white;
     color: $color-sapphire;
   }
@@ -36,7 +37,7 @@
   }
 
   &--main {
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: $gradient-button;
     width: 234px;
     padding: 27px 25px;
     border: none;

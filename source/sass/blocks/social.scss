@@ -1,5 +1,5 @@
 .social {
-  color: #ffffff;
+  color: $color-default-white;
   font-family: $ff-roboto;
   font-size: 14px;
   font-weight: 400;
@@ -70,7 +70,7 @@
 .social__social-item {
   width: 25px;
   height: 25px;
-  background-color: #ffffff;
+  background-color: $color-default-white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -79,6 +79,6 @@
 }
 
 .social__social-link {
-  color: #030A1A;
+  color: $color-black-russian;
   display: flex;
 }

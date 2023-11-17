@@ -16,8 +16,8 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  font-family: $ff-alumni;
+  color: $color-sapphire;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,12 +30,13 @@ html {
 body {
   width: 100%;
   height: 100%;
-
+  outline: none;
   background-color: $color-default-white;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img,

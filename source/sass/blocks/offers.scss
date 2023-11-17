@@ -2,6 +2,7 @@
   width: 1366px;
   padding: 60px 102px 75px;
   margin: 0 auto;
+  font-family: $ff-roboto;
 
   @include vp-1365 {
     width: 768px;
@@ -59,74 +60,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-row: span 2;
 
-    & h3 {
-      margin: 0 0 15px 0;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1;
-
-      @include vp-1365 {
-        font-size: 24px;
-        margin-bottom: 5px;
-      }
-
-      @include vp-767 {
-        font-size: 22px;
-        margin-bottom: 9px;
-      }
-    }
-
-    & span {
-      margin-bottom: 25px;
-      font-size: 70px;
-      font-weight: 700;
-      line-height: 1;
-
-      @include vp-1365 {
-        margin-bottom: 20px;
-      }
-
-      @include vp-767 {
-        font-size: 64px;
-        margin-bottom: 19px;
-      }
-    }
-
-    & p {
-      flex-grow: 1;
-      margin: 0;
-      font-size: 18px;
-      line-height: 1.33;
-      font-weight: 300;
-
-      @include vp-767 {
-        font-size: 16px;
-        line-height: 1.25;
-        margin-bottom: 26px;
-      }
-    }
-
-    & a {
-      color: inherit;
-
-      &::after {
-        background-color: $color-default-white;
-        bottom: 6px;
-      }
-
-      &:not([disabled]):focus {
-        outline: 1px solid $color-default-white;
-      }
-
-      &[disabled] {
-        opacity: 0.5;
-      }
-
-      @include vp-767 {
-        margin: 0 auto;
-      }
-    }
-
     @include vp-1365 {
       grid-column: span 2;
       grid-row: span 1;
@@ -146,63 +79,131 @@
     min-height: 211px;
     padding: 23px 28px 23px;
     border: 7px solid;
-    border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+    border-image: $gradient-border;
     border-image-slice: 1;
-
-    & h3 {
-      margin: 0 0 10px 0;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1;
-
-      @include vp-1365 {
-        font-size: 24px;
-      }
-
-      @include vp-767 {
-        font-size: 22px;
-      }
-    }
-
-    & p {
-      margin: 0;
-      flex-grow: 1;
-      font-weight: 300;
-      line-height: 1.5;
-      letter-spacing: -0.15px;
-
-      @include vp-767 {
-        font-size: 14px;
-        line-height: 1.57;
-      }
-    }
-
-    & a {
-      color: $color-resolution-blue;
-
-      &::after {
-        background-color: $color-resolution-blue;
-        bottom: 5px;
-      }
-
-      &:not([disabled]):focus {
-        outline: 1px solid $color-sapphire;
-      }
-
-      &[disabled] {
-        opacity: 0.3;
-      }
-
-      @include vp-767 {
-        transform: translateX(1px);
-        margin: 0 auto;
-      }
-    }
 
     @include vp-767 {
       text-align: center;
       padding: 39px 45px 28px;
     }
+  }
+}
+
+.offers__item--primary h3 {
+  margin: 0 0 15px 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+
+  @include vp-1365 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    margin-bottom: 9px;
+  }
+}
+
+.offers__item--primary span {
+  margin-bottom: 25px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1;
+
+  @include vp-1365 {
+    margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 64px;
+    margin-bottom: 19px;
+  }
+}
+
+.offers__item--primary p {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 300;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 26px;
+  }
+}
+
+.offers__item--primary a {
+  color: inherit;
+
+  &::after {
+    background-color: $color-default-white;
+    bottom: 6px;
+  }
+
+  &:not([disabled]):focus {
+    outline: 1px solid $color-default-white;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
+}
+
+.offers__item--sale h3 {
+  margin: 0 0 10px 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+
+  @include vp-1365 {
+    font-size: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+  }
+}
+
+.offers__item--sale p {
+  margin: 0;
+  flex-grow: 1;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.15px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 1.57;
+  }
+}
+
+.offers__item--sale a {
+  color: $color-resolution-blue;
+
+  &::after {
+    background-color: $color-resolution-blue;
+    bottom: 5px;
+  }
+
+  &:not([disabled]):focus {
+    outline: 1px solid $color-sapphire;
+  }
+
+  &[disabled] {
+    opacity: 0.3;
+  }
+
+  @include vp-767 {
+    transform: translateX(1px);
+    margin: 0 auto;
   }
 }
 

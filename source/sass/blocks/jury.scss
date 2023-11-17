@@ -2,18 +2,8 @@
   position: relative;
 }
 
-.jury__title {
-  font-family: $ff-alumni;
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 54px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: rgba(16, 38, 84, 1);
-}
-
 .jury__button svg {
-  color:  $color-sapphire;
+  color: $color-sapphire;
   position: absolute;
   transform: translate(-50%, 50%);
 
@@ -45,10 +35,9 @@
 
 .jury__button {
   position: absolute;
-  border: none;
+  border: 1px solid $color-transparent;
   border-radius: 50%;
-  border: 1px solid transparent;
-  background-color: transparent;
+  background-color: $color-transparent;
   top: 30%;
   right: -74px;
 
@@ -92,7 +81,7 @@
   &--prev {
     left: -10%;
     top: 30%;
-    // left: -72px;
+
     @include vp-1365 {
       top: 42.9%;
       left: -16px;
@@ -134,8 +123,10 @@
   font-family: $ff-alumni;
   font-size: 54px;
   font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 1.62px;
+  line-height: 54px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(16, 38, 84, 1);
 
   @include vp-1365 {
     margin-bottom: 35px;
@@ -172,27 +163,26 @@
   color: $color-default-white;
   background-color: $color-sapphire-89;
 
-  &:hover h3,
-  &:focus h3 {
-    display: none;
-  }
-
-  &:hover .jury__descriprion,
-  &:focus .jury__descriprion {
-    opacity: 1;
-    transform: scale(1);
-  }
-
   @include vp-1365 {
     width: 268px;
     height: 294px;
   }
 
   @include vp-767 {
-    // max-height: 548px;
     width: 226px;
     height: 274px;
   }
+}
+
+.jury__item:hover h3,
+.jury__item:focus h3 {
+  display: none;
+}
+
+.jury__item:hover .jury__descriprion,
+.jury__item:focus .jury__descriprion {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .jury__item-img {
@@ -201,13 +191,11 @@
   object-fit: cover;
 
   @include vp-1365 {
-    // max-height: 588px;
     width: 268px;
     height: 294px;
   }
 
   @include vp-767 {
-    // max-height: 548px;
     width: 226px;
     height: 274px;
   }

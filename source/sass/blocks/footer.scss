@@ -1,15 +1,15 @@
 .footer {
   font-family: $ff-roboto;
-  color: #102654;
+  color: $color-sapphire;
   text-align: left;
 }
 
 .footer__wrapper {
-  background-color: #030A1A;
-  color: #ffffff;
+  background-color: $color-black-russian;
+  color: $color-default-white;
 
   &--inf {
-    color: #102654;
+    color: $color-sapphire;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -33,7 +33,7 @@
 
 .form__input {
   width: 50px;
-  color: #ffffff;
+  color: $color-default-white;
 
   @include vp-1365 {
     width: 100%;
@@ -42,14 +42,17 @@
 }
 
 .form__input input {
-  background-color: transparent;
-  border: none;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #74819C;
+  background-color: $color-transparent;
+  border: 1px solid $color-transparent;
+  border-bottom: 1px solid $color-light-slate-grey;
   width: 190px;
   padding: 10px;
-  background-color: transparent;
   outline: none;
+  color: $color-default-white;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
 
   @include vp-1365 {
     width: 100%;
@@ -64,19 +67,11 @@
 .form__input:focus input,
 .form__input:active input,
 .form__input input:focus {
-  border: 1px solid #ffffff;
+  border: 1px solid $color-default-white;
 }
 
 .form__input input::placeholder {
-  color: #ffffff;
-  font-family: $ff-roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-}
-
-.form__input input {
-  color: #ffffff;
+  color: $color-default-white;
   font-family: $ff-roboto;
   font-size: 14px;
   font-weight: 400;
@@ -84,12 +79,12 @@
 }
 
 .form__input input[disabled]::placeholder {
-  color: #74819C;
+  color: $color-light-slate-grey;
 }
 
 .form__input input[disabled] {
   border: none;
-  border-bottom: 1px solid #74819C;
+  border-bottom: 1px solid $color-light-slate-grey;
 }
 
 .form__input label {

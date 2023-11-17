@@ -1,6 +1,6 @@
 .price {
   width: 100%;
-  background-color: #F8F9FC;
+  background-color: $color-ghost-white;
   position: relative;
 }
 
@@ -9,17 +9,13 @@
   width: 1366px;
   padding: 70px 102px 75px;
   text-align: center;
-}
 
-@media (max-width: $vp-1365) {
-  .price__container {
+  @include vp-1365 {
     width: 768px;
     padding-top: 58px;
   }
-}
 
-@media (max-width: $vp-767) {
-  .price__container {
+  @include vp-767 {
     width: 320px;
     padding: 41px 14px 52px;
   }
@@ -33,17 +29,13 @@
   letter-spacing: 0.03em;
   color: $color-sapphire;
   margin-bottom: 35px;
-}
 
-@media (max-width: $vp-1365) {
-  .price__title {
+  @include vp-1365 {
     font-size: 42px;
     line-height: 42px;
   }
-}
 
-@media (max-width: $vp-767) {
-  .price__title {
+  @include vp-767 {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 22px;
@@ -67,21 +59,17 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #78787833;
+    background-color: $color-grey-20;
   }
-}
 
-@media (max-width: $vp-1365) {
-  .price__pagination-list {
+  @include vp-1365 {
     gap: 0;
     justify-content: space-between;
     margin-bottom: 44px;
     width: 332px;
   }
-}
 
-@media (max-width: $vp-767) {
-  .price__pagination-list {
+  @include vp-767 {
     width: 290px;
     margin-bottom: 34px;
   }
@@ -91,7 +79,6 @@
   color: $color-sapphire-50;
   position: relative;
   padding-bottom: 12px;
-  cursor: pointer;
 
   &--active {
     color: $color-sapphire;
@@ -104,7 +91,7 @@
       width: 100%;
       height: 2px;
       z-index: 3;
-      background-color: #D10A42;
+      background-color: $color-crimson;
     }
   }
 }
@@ -114,27 +101,41 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
-  background-color: transparent;
+  background-color: $color-transparent;
   border: none;
   color: inherit;
   cursor: pointer;
-}
 
-@media (max-width: $vp-1365) {
-  .price__pagination-item button {
+  @include vp-1365 {
     font-size: 18px;
     line-height: 18px;
     padding-bottom: 15px;
   }
-}
 
-@media (max-width: $vp-767) {
-  .price__pagination-item button {
+  @include vp-767 {
     font-size: 16px;
     line-height: 16px;
     padding-bottom: 18px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-sapphire;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      z-index: 3;
+      background-color: $color-crimson;
+    }
+  }
 }
+
 
 .price__cards-wrapper {
   display: flex;
@@ -143,20 +144,15 @@
   list-style-type: none;
   box-sizing: border-box;
   padding: 0;
-}
 
-@media (max-width: $vp-1365) {
-  .price__cards-wrapper {
+  @include vp-1365 {
     flex-direction: column;
     gap: 40px;
     align-items: center;
   }
-}
 
-@media (max-width: $vp-767) {
-  .price__cards-wrapper {
+  @include vp-767 {
     gap: 34px;
-
   }
 }
 
@@ -186,20 +182,16 @@
       width: 100%;
       height: 100%;
       border: 7px solid;
-      border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+      border-image: $gradient-card-border;
       border-image-slice: 1;
     }
   }
-}
 
-@media (max-width: $vp-1365) {
-  .price__card {
+  @include vp-1365 {
     width: 440px;
   }
-}
 
-@media (max-width: $vp-767) {
-  .price__card {
+  @include vp-767 {
     width: 290px;
     padding: 51px 20px;
   }
@@ -210,18 +202,14 @@
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 6px;
-}
 
-@media (max-width: $vp-1365) {
-  .price__card-name {
+  @include vp-1365 {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 14px;
   }
-}
 
-@media (max-width: $vp-767) {
-  .price__card-name {
+  @include vp-767 {
     font-size: 22px;
     line-height: 22px;
   }
@@ -233,16 +221,12 @@
   line-height: 24px;
   margin-bottom: 70px;
   margin-top: 0;
-}
 
-@media (max-width: $vp-1365) {
-  .price__card-description {
+  @include vp-1365 {
     margin-bottom: 74px;
   }
-}
 
-@media (max-width: $vp-767) {
-  .price__card-description {
+  @include vp-767 {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 65px;
@@ -255,11 +239,9 @@
   line-height: 90px;
   position: relative;
   z-index: 1;
-  color: #103AAE;
-}
+  color: $color-egyptian-blue;
 
-@media (max-width: $vp-767) {
-  .price__card-price {
+  @include vp-767 {
     font-size: 48px;
     line-height: 72px;
   }
@@ -271,15 +253,13 @@
   left: -20px;
   width: 203px;
   z-index: -1;
-  color: #E8E8E8;
+  color: $color-whisper;
   opacity: 48%;
   font-size: 100px;
   font-weight: 700;
   line-height: 150px;
-}
 
-@media (max-width: $vp-767) {
-  .price__card-price-decoration {
+  @include vp-767 {
     font-size: 80px;
     line-height: 120px;
     left: -35px;
@@ -287,13 +267,12 @@
   }
 }
 
+
 .price__card-price svg {
   width: 30px;
   height: 42px;
-}
 
-@media (max-width: $vp-767) {
-  .price__card-price svg {
+  @include vp-767 {
     width: 24px;
     height: 33px;
   }
@@ -302,31 +281,12 @@
 .price__button {
   margin: 34px auto;
   width: 205px;
-}
 
-@media (max-width: $vp-1365) {
-  .price__button {
+  @include vp-1365 {
     margin: 24px auto 35px;
   }
-}
 
-@media (max-width: $vp-767) {
-  .price__button {
+  @include vp-767 {
     margin: 22px auto 0;
   }
 }
-
-// @media (max-width: $vp-1365) {
-//   .price__button {
-
-//   }
-// }
-
-// .price__decoration-element {
-//   position: absolute;
-//   bottom: -21.5%;
-//   right: -13%;
-//   z-index: 0;
-//   transform: rotate(0deg);
-//   display: block;
-// }

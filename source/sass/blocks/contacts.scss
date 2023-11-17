@@ -1,5 +1,5 @@
 .contacts {
-  background-color: #ffffff;
+  background-color: $color-default-white;
 }
 
 .contacts a {
@@ -34,7 +34,7 @@
     position: absolute;
     top: 13%;
     left: 50%;
-    background-color: #74819C;
+    background-color: $color-light-slate-grey;
     width: 1px;
     height: 70%;
 

@@ -1,7 +1,6 @@
-const sliderJury = document.querySelector('.jury__swiper');
-const buttonNext = document.querySelector('.jury__button--next');
-const buttonPrev = document.querySelector('.jury__button--prev');
-
+const sliderJury = document.querySelector('[data-jury="jury-swiper"]');
+const buttonNext = document.querySelector('[data-jury="jury-button-next"]');
+const buttonPrev = document.querySelector('[data-jury="jury-button-prev"]');
 
 const initSliderJury = () => {
   if (sliderJury) {

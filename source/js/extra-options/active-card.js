@@ -9,11 +9,11 @@ const changeActiveCard = (card) => {
     cards.forEach((element) => {
       if (element.classList.contains('price__card--active')) {
         element.classList.remove('price__card--active');
-        element.querySelector('button').classList.remove('button--main');
+        element.querySelector('a').classList.remove('button--main');
       }
     });
     cardsArray[card].classList.add('price__card--active');
-    cardsArray[card].querySelector('button').classList.add('button--main');
+    cardsArray[card].querySelector('a').classList.add('button--main');
   }
 };
 
@@ -23,7 +23,7 @@ const initActiveCard = () => {
     list.addEventListener('click', () => {
       for (let i = 1; i < cardsArray.length; i++) {
         cardsArray[i].classList.add('price__card--active');
-        cardsArray[i].querySelector('button').classList.add('button--main');
+        cardsArray[i].querySelector('a').classList.add('button--main');
         i++;
         i++;
       }
