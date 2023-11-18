@@ -38,9 +38,7 @@
   border: 1px solid $color-transparent;
   border-radius: 50%;
   background-color: $color-transparent;
-  top: 30%;
-  right: -74px;
-
+  top: 43.5%;
   width: 56px;
   height: 56px;
   cursor: pointer;
@@ -74,13 +72,21 @@
   }
 
   &--next {
-    right: -10%;
+    right: -6.5%;
     transform: rotate(180deg);
+
+    @include vp-1365 {
+      right: -18px;
+    }
+
+    @include vp-767 {
+      top: 48%;
+      right: -15px;
+    }
   }
 
   &--prev {
-    left: -10%;
-    top: 30%;
+    left: -6.5%;
 
     @include vp-1365 {
       top: 42.9%;
@@ -88,8 +94,8 @@
     }
 
     @include vp-767 {
-      top: 47.5%;
-      left: -3px;
+      top: 48%;
+      left: -6px;
     }
   }
 }
@@ -119,7 +125,7 @@
 }
 
 .jury__title {
-  margin: 0 0 39px 0;
+  margin: 0 0 45px 0;
   font-family: $ff-alumni;
   font-size: 54px;
   font-weight: 600;
@@ -136,7 +142,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     font-size: 32px;
     letter-spacing: 0.96px;
   }

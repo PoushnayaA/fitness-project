@@ -13,30 +13,60 @@
   margin: auto 0;
 }
 
+.social__logo-link {
+  min-width: 109px;
+}
+
 .social__link {
   cursor: pointer;
   color: inherit;
+  padding: 7px;
+
+  &:hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:focus {
+    border: 1px solid $color-default-white;
+  }
+
+  &[disabled] {
+    opacity: 40%;
+  }
 }
 
 .social__svg {
   display: block;
   margin: auto 0;
+
+  @include vp-1365 {
+    width: 100px;
+    height: 22px;
+    object-fit: none;
+  }
+
+  @include vp-767 {
+    height: 15px;
+    object-fit: contain;
+  }
 }
 
 .social__wrapper {
-  width: 678px;
+  width: 1366px;
   margin: 0 auto;
+  padding: 27px 103px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   @include vp-1365 {
     width: 768px;
+    padding: 32px 45px;
   }
 
   @include vp-767 {
     width: 320px;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 28px 10px 45px;
   }
 }
 
@@ -45,11 +75,18 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 27px;
   padding: 0;
+  margin-right: 15px;
+
+  @include vp-1365 {
+    gap: 16px;
+  }
 
   @include vp-767 {
-    gap: 45px;
+    margin-top: 31px;
+    gap: 19px 21px;
+    margin-bottom: 53px;
   }
 }
 
@@ -78,7 +115,25 @@
   flex-wrap: wrap;
 }
 
+.social__social-item:hover,
+.social__social-item:focus {
+  background-color: $color-egyptian-blue;
+}
+
+.social__social-item:active {
+  background-color: $color-sapphire;
+}
+
 .social__social-link {
   color: $color-black-russian;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.social__social-link:hover,
+.social__social-link:focus {
+  color: $color-default-white;
 }

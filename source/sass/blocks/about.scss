@@ -10,7 +10,7 @@
   justify-content: space-between;
   margin: 0 auto;
   width: 1366px;
-  padding: 60px 102px 75px;
+  padding: 60px 102px 77px;
 
   @include vp-1365 {
     width: 768px;
@@ -122,7 +122,7 @@
 
 .about__video {
   position: absolute;
-  bottom: -56px;
+  top: 348px;
   left: -63px;
   z-index: 1;
   width: 364px;
@@ -141,7 +141,7 @@
 
   @include vp-1365 {
     left: 30.5%;
-    bottom: -52px;
+    top: 293px;
     width: 266px;
     height: 167px;
   }
@@ -153,6 +153,7 @@
     margin-top: 42px;
     width: 320px;
     height: 167px;
+    top: 0;
   }
 }
 

@@ -26,7 +26,7 @@
 <body class="page">
   <h1 class="visually-hidden">Фитнес центр в Омске.</h1>
   <div class="page__wrapper">
-    <header class="main-header">
+    <header class="main-header" data-test="hero">
       <div class="main-header__container">
         <nav class="main-header__nav main-nav">
           <a class="main-nav__logo" href="index.html">
@@ -69,9 +69,9 @@
       </div>
     </header>
     <main>
-      <section class="about">
-        <h2 class="visually-hidden">Блок с описанием</h2>
+      <section class="about" data-test="about">
         <div class="about__container">
+        <h2 class="visually-hidden">Блок с описанием</h2>
           <div class="about__wrapper about__wrapper--text-content">
             <h3 class="about__title">Тренажерный зал</h3>
             <p class="about__description">Просторный зал площадью 900 кв/м</p>
@@ -126,9 +126,9 @@
           </div>
         </div>
       </section>
-      <section class="price" id="price">
-        <h2 class="visually-hidden">Блок с ценами</h2>
+      <section class="price" id="price" data-test="price">
         <div class="price__container" data-tabs="parent">
+        <h2 class="visually-hidden">Блок с ценами</h2>
           <h3 class="price__title">Абонементы</h3>
           <ul class="price__pagination-list" data-tabs="controls">
             <li class="price__pagination-item"><button data-tabs="control" data-price-card="price-pagination">1
@@ -255,10 +255,18 @@
             </ul>
           </div>
         </div>
+        <div class="price__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 1365px)" width="327" height="423" srcset="./img/price/decoration-tablet@1x.webp 1x, ./img/price/decoration-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1366px)" width="287" height="494" srcset="./img/price/decoration-desktop@1x.webp 1x, ./img/price/decoration-desktop@2x.webp 2x">
+            <source type="image/png" media="(max-width: 1365px)" width="327" height="423" srcset="./img/price/decoration-tablet@1x.png 1x, ./img/price/decoration-tablet@2x.png 2x">
+            <img src="./img/price/decoration-desktop@1x.png" width="287" height="494" srcset="./img/price/decoration-desktop@2x.png 2x" alt="Блины Rogue Fitness">
+          </picture>
+        </div>
       </section>
-      <section class="games">
-        <h2 class="visually-hidden">Игры и жюри.</h2>
+      <section class="games" data-test="games">
         <div class="games__news-container">
+        <h2 class="visually-hidden">Игры и жюри.</h2>
           <div class="games__text-wrapper">
             <div class="games__information">
               <h3 class="games__title">Super Games</h3>
@@ -465,9 +473,9 @@
           </div>
         </div>
       </section>
-      <section class="features">
-        <h2 class="features__title">Наши преимущества</h2>
+      <section class="features" data-test="features">
         <div class="features__container">
+        <h2 class="features__title">Наши преимущества</h2>
           <ul class="features__list">
             <li class="features__item">
               <div class="features__item-title">
@@ -526,7 +534,7 @@
                 <h3>Год</h3>
                 <span>4999</span>
                 <p>Безлимитный абонемент в тренажерный зал</p>
-                <a class="offers__item-link" href="#" tabindex="0">Подробнее</a>
+                <a class="offers__item-link" href="#">Подробнее</a>
               </div>
               <div class="offers__item-image-container">
                 <picture>
@@ -818,8 +826,7 @@
         </div>
       </section>
       <section class="reviews" data-test="reviews">
-        <div class="container">
-          <div class="reviews__wrapper">
+          <div class="reviews__container">
             <h2 class="reviews__title">Отзывы</h2>
             <button class="reviews__button reviews__button--prev" type="button" data-button="prev-reviews"
               aria-label="Назад.">
@@ -864,7 +871,6 @@
               </svg>
             </button>
           </div>
-        </div>
       </section>
     </main>
     <footer class="footer" data-test="footer">
@@ -922,7 +928,7 @@
       <div class="footer__wrapper social">
         <div class="social__wrapper">
           <div class="social__logo">
-            <a class="social__link" href="#">
+            <a class="social__logo-link" href="#">
               <img class="social__svg" src="./img/footer-logo.svg" width="109" height="24" alt="Логотип SUPERGYM.">
             </a>
           </div>
@@ -931,7 +937,7 @@
               <a class="social__link" href="#">Услуги</a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">Абонементы</a>
+              <a class="social__link" href="./buy.html">Абонементы</a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#">Акции</a>

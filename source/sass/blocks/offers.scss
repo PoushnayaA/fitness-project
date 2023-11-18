@@ -1,12 +1,12 @@
 .offers__container {
   width: 1366px;
-  padding: 60px 102px 75px;
+  padding: 120px 102px 120px;
   margin: 0 auto;
   font-family: $ff-roboto;
 
   @include vp-1365 {
     width: 768px;
-    padding: 60px 45px 75px;
+    padding: 100px 45px;
   }
 
   @include vp-767 {
@@ -51,6 +51,8 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    width: 290px;
+    margin: 0 auto;
   }
 }
 
@@ -137,7 +139,7 @@
 }
 
 .offers__item--primary a {
-  color: inherit;
+//   // color: inherit;
 
   &::after {
     background-color: $color-default-white;
