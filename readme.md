@@ -1,3 +1,8 @@
+### Самостоятельный проект 
+По макетам https://www.figma.com/file/lOL3XvM3N1KbwgITzl4x25/Акселератор-Фронтенд-разработчик.-Fitness-(16)?type=design&node-id=0-1&mode=design&t=WHCh3HX95sBvbpjO-0
+Техническое задание https://htmlacademy.notion.site/Fitness-7609715541cf439491dac7e7a4feee41
+Опубликованная версия (с некоторыми пиксельными сдвигами, так как по ТЗ были фиксированные брейкопоинты) https://fitness-proj.netlify.app
+
 ## Краткая инструкция по работе
 Для начала работы у вас должент быть установлен **Node.js**
 
