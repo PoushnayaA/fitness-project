@@ -1,6 +1,6 @@
 .offers__container {
   width: 1366px;
-  padding: 120px 103px 120px;
+  padding: 120px 103px;
   margin: 0 auto;
   font-family: $ff-roboto;
 
@@ -16,7 +16,7 @@
 }
 
 .offers__title {
-  margin: 0 0 70px 0;
+  margin: 0 0 70px;
   text-align: center;
   font-family: $ff-alumni;
   font-size: 54px;
@@ -80,7 +80,7 @@
     display: flex;
     flex-direction: column;
     min-height: 211px;
-    padding: 23px 28px 23px;
+    padding: 23px 28px;
     border: 7px solid;
     border-image: $gradient-border;
     border-image-slice: 1;
@@ -97,7 +97,7 @@
 }
 
 .offers__item--primary h3 {
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
   font-size: 26px;
   font-weight: 700;
   line-height: 1;
@@ -143,7 +143,7 @@
   }
 }
 
-.offers__item--primary a {
+.offers__item--primary .offers__item-link {
   &::after {
     background-color: $color-default-white;
     bottom: 6px;
@@ -153,17 +153,13 @@
     outline: 1px solid $color-default-white;
   }
 
-  &[disabled] {
-    opacity: 0.5;
-  }
-
   @include vp-767 {
     margin: 0 auto;
   }
 }
 
 .offers__item--sale h3 {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   font-size: 26px;
   font-weight: 700;
   line-height: 1;
@@ -200,10 +196,6 @@
 
   &:not([disabled]):focus {
     outline: 1px solid $color-sapphire;
-  }
-
-  &[disabled] {
-    opacity: 0.3;
   }
 
   @include vp-767 {
@@ -282,5 +274,12 @@
   &[disabled] {
     pointer-events: none;
     cursor: default;
+    opacity: 0.5;
   }
+}
+
+.offers__item--sale[disabled] {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.3;
 }

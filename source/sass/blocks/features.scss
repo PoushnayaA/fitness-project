@@ -30,7 +30,7 @@
 }
 
 .features__title {
-  margin: 0 0 50px 0;
+  margin: 0 0 50px;
   text-align: center;
   font-family: $ff-alumni;
   font-size: 54px;
@@ -83,12 +83,6 @@
   max-width: 340px;
   min-height: 114px;
 
-  & ~ .features__item-text {
-    background: $gradient-features-text;
-    color: $color-transparent;
-    background-clip: text;
-  }
-
   &:nth-child(2),
   &:last-child {
     padding: 0;
@@ -138,6 +132,12 @@
     text-align: center;
     min-height: 169px;
   }
+}
+
+.features__item ~ .features__item-text {
+  background: $gradient-features-text;
+  color: $color-transparent;
+  background-clip: text;
 }
 
 .features__item:not(.features__item--decorated):nth-child(2) .features__item-text p,

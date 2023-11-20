@@ -35,7 +35,7 @@
     }
 
     @include vp-767 {
-      padding: 38px 14px 38px 14px;
+      padding: 38px 14px;
       text-align: left;
     }
   }
@@ -216,7 +216,6 @@
     &::before {
       width: 72px;
       height: 72px;
-
       top: 3px;
       left: 4px;
     }
