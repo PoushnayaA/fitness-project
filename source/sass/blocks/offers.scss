@@ -1,16 +1,16 @@
 .offers__container {
   width: 1366px;
-  padding: 120px 102px 120px;
+  padding: 120px 103px 120px;
   margin: 0 auto;
   font-family: $ff-roboto;
 
   @include vp-1365 {
     width: 768px;
-    padding: 100px 45px;
+    padding: 101px 45px 99px;
   }
 
   @include vp-767 {
-    padding: 71px 0 70px;
+    padding: 70px 0;
     width: 320px;
   }
 }
@@ -33,7 +33,7 @@
   @include vp-767 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 41px;
+    margin-bottom: 42px;
   }
 }
 
@@ -53,6 +53,7 @@
     grid-template-columns: 1fr;
     width: 290px;
     margin: 0 auto;
+    gap: 27px;
   }
 }
 
@@ -71,7 +72,7 @@
     @include vp-767 {
       grid-template-columns: 1fr;
       grid-column: span 1;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
     }
   }
 
@@ -83,6 +84,10 @@
     border: 7px solid;
     border-image: $gradient-border;
     border-image-slice: 1;
+
+    @include vp-1365 {
+      min-height: 212px;
+    }
 
     @include vp-767 {
       text-align: center;
@@ -139,8 +144,6 @@
 }
 
 .offers__item--primary a {
-//   // color: inherit;
-
   &::after {
     background-color: $color-default-white;
     bottom: 6px;
@@ -179,11 +182,11 @@
   flex-grow: 1;
   font-weight: 300;
   line-height: 1.5;
-  letter-spacing: -0.15px;
 
   @include vp-767 {
     font-size: 14px;
     line-height: 1.57;
+    letter-spacing: 0.1px;
   }
 }
 
@@ -217,7 +220,8 @@
   color: $color-default-white;
 
   @include vp-1365 {
-    padding-top: 45px;
+    padding-top: 46px;
+    padding-bottom: 38px;
   }
 
   @include vp-767 {

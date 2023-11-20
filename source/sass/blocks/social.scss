@@ -47,26 +47,28 @@
 
   @include vp-767 {
     height: 15px;
+    width: 99px;
     object-fit: contain;
+    margin-left: 2px;
   }
 }
 
 .social__wrapper {
   width: 1366px;
   margin: 0 auto;
-  padding: 27px 103px;
+  padding: 25px 103px 26px;
   display: flex;
   justify-content: space-between;
 
   @include vp-1365 {
     width: 768px;
-    padding: 32px 45px;
+    padding: 31px 45px 31px;
   }
 
   @include vp-767 {
     width: 320px;
     flex-direction: column;
-    padding: 28px 10px 45px;
+    padding: 28px 8px 45px;
   }
 }
 
@@ -75,12 +77,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 27px;
+  gap: 26.5px;
   padding: 0;
+  margin-top: 17px;
   margin-right: 15px;
 
   @include vp-1365 {
     gap: 16px;
+    margin-top: 13px;
   }
 
   @include vp-767 {
@@ -98,6 +102,11 @@
   flex-wrap: wrap;
   width: 95px;
   padding: 0;
+  margin-top: 15px;
+
+  @include vp-1365 {
+    margin-top: 14px;
+  }
 
   @include vp-767 {
     margin: 0 auto;

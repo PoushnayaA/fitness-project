@@ -18,12 +18,16 @@
   @include vp-1365 {
     font-size: 42px;
     line-height: 42px;
+    letter-spacing: 0.04em;
+    margin-bottom: 17px;
   }
 
   @include vp-767 {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
+    margin-top: 59px;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -32,14 +36,14 @@
   margin-left: 120px;
 
   @include vp-1365 {
-    margin: 105px auto 79px;
+    margin: 104px auto 80px;
     width: 502px;
   }
 
   @include vp-767 {
     width: 290px;
-    margin-top: 67px;
-    margin-bottom: 67px;
+    margin-top: 66px;
+    margin-bottom: 66px;
   }
 }
 
@@ -51,15 +55,16 @@
   &::after {
     content: "";
     position: absolute;
-    top: 13%;
+    top: 15%;
     left: 55%;
     background-color: $color-light-slate-grey;
     width: 1px;
-    height: 70%;
+    height: 73%;
 
     @include vp-1365 {
       left: 50%;
       height: 75%;
+      top: 13%;
     }
 
     @include vp-767 {
@@ -70,7 +75,7 @@
   @include vp-1365 {
     width: 502px;
     display: grid;
-    grid-template-columns: 190px 190px;
+    grid-template-columns: 190px 191px;
     gap: 40px;
   }
 
@@ -88,15 +93,17 @@
   grid-template-rows: 1fr 1fr;
   position: relative;
   margin-top: 14px;
+  gap: 1px;
 
   @include vp-1365 {
-    gap: 12px;
+    gap: 13px;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
     margin: 0;
+    gap: 12px;
   }
 }
 
@@ -108,7 +115,7 @@
   margin-top: 10px;
 
   @include vp-1365 {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     font-size: 22px;
     line-height: 22px;
   }
@@ -126,6 +133,7 @@
   font-weight: 400;
   line-height: 22px;
   margin: 4px 0;
+  display: block;
 
   @include vp-767 {
     line-height: 20px;

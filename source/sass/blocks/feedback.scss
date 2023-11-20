@@ -10,13 +10,13 @@
   margin-left: auto;
 
   @include vp-1365 {
-    margin: 100px auto;
+    margin: 100px auto 99px;
     width: 502px;
   }
 
   @include vp-767 {
     width: 290px;
-    margin-top: 72px;
+    margin-top: 70px;
     margin-bottom: 69px;
   }
 }
@@ -39,5 +39,6 @@
   @include vp-767 {
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 37px;
   }
 }

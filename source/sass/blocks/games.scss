@@ -1,14 +1,14 @@
 .games {
-  margin-top: 120px;
+  padding-top: 120px;
   width: 100%;
   font-family: $ff-roboto;
 
   @include vp-1365 {
-    margin-top: 100px;
+    padding-top: 100.5px;
   }
 
   @include vp-767 {
-    margin-top: 71px;
+    padding-top: 71px;
   }
 }
 
@@ -58,7 +58,7 @@
   width: 500px;
   min-height: 500px;
   height: 100%;
-  padding: 80px 81px 30px;
+  padding: 81px 80px 30px;
 
   @include vp-1365 {
     width: 292px;
@@ -67,8 +67,9 @@
   }
 
   @include vp-767 {
-    padding: 40px 43px 40px 40px;
+    padding: 40px 41px 40px 40px;
     min-height: 309px;
+    width: 290px;
   }
 }
 
@@ -100,6 +101,7 @@
   @include vp-1365 {
     font-size: 48px;
     line-height: 46px;
+    margin-bottom: 22px;
   }
 
   @include vp-767 {
@@ -110,11 +112,14 @@
 .games__dates {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   margin-left: 2px;
+  margin-top: -2.5px;
 
   @include vp-1365 {
     gap: 8px;
+    margin-right: 1px;
+    margin-top: 0;
   }
 
   @include vp-767 {
@@ -126,15 +131,16 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 
   @include vp-1365 {
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 
   @include vp-767 {
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 3px;
   }
 }
 
@@ -146,11 +152,15 @@
   &::before {
     content: "";
     position: absolute;
-    top: -5px;
+    top: -5.5px;
     left: 0;
-    width: 100%;
+    width: 101%;
     height: 1px;
     background-color: $color-default-white;
+
+    @include vp-1365 {
+      top: -3px;
+    }
   }
 }
 
@@ -171,13 +181,14 @@
   line-height: 14px;
   display: flex;
   justify-content: space-around;
-  margin-left: 8px;
+  margin-left: 6px;
   flex-direction: column;
 
   @include vp-1365 {
     font-size: 10px;
     line-height: 10px;
-    margin-left: 3px;
+    margin-top: 1px;
+    margin-left: 4px;
   }
 }
 
@@ -185,6 +196,8 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
+  margin-top: 17px;
+  margin-bottom: 1px;
 
   @include vp-1365 {
     margin: 0;
@@ -199,9 +212,27 @@
 
 .games__button {
   width: 100%;
-  margin: 40px 0;
+  margin: 55px 0 45px;
 
   @include vp-1365 {
-    margin: 20px 0 0;
+    margin: 21.5px 0 0;
+  }
+
+  @include vp-767 {
+    margin: 21px 0 0;
+  }
+}
+
+.games__number span {
+  @include vp-1365 {
+    margin-top: -1px;
+  }
+}
+
+.games__number span:last-of-type {
+  margin-top: -4px;
+
+  @include vp-1365 {
+    margin-top: -4.5px;
   }
 }

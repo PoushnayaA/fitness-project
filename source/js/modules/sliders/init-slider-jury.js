@@ -15,16 +15,19 @@ const initSliderJury = () => {
 
       breakpoints: {
         1366: {
+          initialSlide: 0,
           slidesPerView: 4,
           spaceBetween: 40,
         },
 
         768: {
+          initialSlide: 2,
           slidesPerView: 2,
           spaceBetween: 32,
         },
 
         320: {
+          initialSlide: 2,
           slidesPerView: 1,
           spaceBetween: 20,
         },
